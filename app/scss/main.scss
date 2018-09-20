@@ -1,20 +1,32 @@
 *::-webkit-input-placeholder {
-color:#202020;
+color:#505050;
 opacity: 1;
 }
 
 *:-moz-placeholder {
-color:#202020;
+color:#505050;
 	opacity: 1;
 }
 *::-moz-placeholder {
-color:#202020;
+color:#505050;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-color:#202020;
+color:#505050;
 	opacity: 1;
 }
+*::-webkit-textarea-placeholder {
+color:#505050;
+opacity: 1;
+}
+
+*:-ms-textarea-placeholder {
+color:#505050;
+	opacity: 1;
+}
+
+
+
 *, *:before, *:after {
   box-sizing: border-box;
    outline:none;

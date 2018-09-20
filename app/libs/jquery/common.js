@@ -16,9 +16,9 @@ $('.hidden-mnu').hide("slow");
 });
 
 // pagination on lending pages
-$(".top_line_menu ul li a, .hidden_mnu ul li a").mPageScroll2id({
+$("#mainmenu ul li a").mPageScroll2id({
 layout                 : "auto",
-offset                 : ".top_line_box",
+offset                 : ".top_menu",
 scrollEasing           : "linear",
 highlightByNextTarget  : true,
 keepHighlightUntilNext : true,
@@ -51,8 +51,55 @@ $("a[href='#politics'], a[href='#call-backtimer'], a[href='#call-back'], a[href=
 	$(".forms-call h4").text(dataText);
 	$(".forms-call [name=admin-data]").val(dataForm);
 });
+$('#carousel_adwice').owlCarousel({
+  loop               : true,
+  margin             : 25,
+  dots               : false,
+  nav                : false,
+  autoplay           : true,
+  autoplayTimeout    : 5000,
+  autoplayHoverPause : true,
 
+  responsive         : {
+    // breakpoint from 0 up
+  0                  : {
+  items              : 1
+    },
+    // breakpoint from 480 up
+  480                : {
+  items              : 2
+    },
+    // breakpoint from 768 up
+  768                : {
+  items              : 3
+    }
+}
+});
 
+$('#carousel_trademark').owlCarousel({
+  loop               : true,
+  margin             : 25,
+  dots               : false,
+  nav                : false,
+  autoplay           : true,
+  autoplayTimeout    : 5000,
+  autoplayHoverPause : true,
+
+  responsive         : {
+    // breakpoint from 0 up
+  0                  : {
+  items              : 2
+    },
+    // breakpoint from 480 up
+  480                : {
+  items              : 3
+    },
+    // breakpoint from 768 up
+  768                : {
+  items              : 5
+    }
+}
+});
 
 
 //Ajax push mesege http://api.jquery.com/jquery.ajax/
@@ -76,6 +123,71 @@ $("form").submit(function() { //Change
 	});
 //castom code
 
+
+    var $menu =  $("#my-menu").mmenu({
+ "counters": true,
+ drag 		: true,
+pageScroll 	: {
+scroll 		: true,
+update		: true
+},
+//		         "autoHeight": true,
+"extensions" : [
+   "pagedim-white",
+   "theme-dark",
+//"popup",
+//"position-back",
+//"position-front",
+"position-right",
+ "fx-menu-slide",
+ "fx-panels-slide-100",
+ "fx-listitems-drop", "multiline"
+]
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var $icon = $("#my-icon");
+var API = $menu.data( "mmenu" );
+
+$icon.on( "click", function() {
+   API.open();
+});
+
+API.bind( "open:finish", function() {
+   setTimeout(function() {
+      $icon.addClass( "is-active" );
+   }, 100);
+});
+API.bind( "close:finish", function() {
+   setTimeout(function() {
+      $icon.removeClass( "is-active" );
+   }, 100);
+});
+
+
+//end code
 
 
 });

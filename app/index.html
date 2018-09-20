@@ -19,62 +19,80 @@
 <link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body>
- <header class="header_block">
+   <div id="my-wrapper" >
+      <div id="my-header" >
 
-  <div class="header_top">
-    <div class="container">
-      <div class="row">
+       <header class="header_block" id="one_block">
 
-        <div class="header_top_social">
-        <div class="header_top_social_left">Мы работаем с 1985 года в Нью-Йорке</div>
-        <ul class="header_top_social_right">
-          <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-          <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-          <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-          <li> <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </div>
+        <div class="header_top">
+          <div class="container">
+            <div class="row">
 
-  <div class="top_line">
-    <div class="container">
-      <div class="row">
-        <div class="top_line_block">
-          <div class="top_line_box">
-            <div class="top_line_logo">
-              <img src="images/logo-dark.png" alt="логотип">
-            </div>
-          </div>
-          <div class="top_call_box">
-            <div class="top_call_box_item tci_locate">
-              <div class="tci_title">1010 Avenue of the Moon</div>
-              <div class="tci_descr">New York, Y 10018 USA.</div>
-            </div>
-            <div class="top_call_box_item tci_phone">
-              <div class="tci_title">1010 Avenue of the Moon</div>
-              <div class="tci_descr">New York, Y 10018 USA.</div>
-            </div>
-            <div class="top_call_box_item tci_clock">
-              <div class="tci_title">1010 Avenue of the Moon</div>
-              <div class="tci_descr">New York, Y 10018 USA.</div>
+              <div class="header_top_social">
+                <div class="header_top_social_left">
+                  <i class="flaticon-xzopro-placeholder"></i> <span>Мы работаем с 1985 года в Нью-Йорке</span>
+                </div>
+                <ul class="header_top_social_right">
+                  <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                  <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                  <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+                  <li> <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-<div class="top_menu">
-  <div class="container">
-      <div class="row">
-        <div class="top_menu_block">
-          <div id="mainmenu">
+        <div class="top_line">
+          <div class="container">
+            <div class="row">
+              <div class="top_line_block">
+                <div class="top_line_box">
+                  <div class="top_line_logo">
+                    <img src="images/logo-dark.png" alt="логотип">
+                  </div>
+                </div>
+                <div class="top_call_box">
+
+                  <div class="top_call_box_item ">
+                    <div class="tci_locate"> <i class="flaticon-xzopro-placeholder"></i></div>
+                    <div class="tci_info">
+                      <div class="tci_title">1010 Avenue of the Moon</div>
+                      <div class="tci_descr">New York, Y 10018 USA.</div>
+                    </div>
+                  </div>
+
+                  <div class="top_call_box_item">
+                   <div class="tci_locate"> <i class="flaticon-xzopro-technology"></i></div>
+                   <div class="tci_info">
+                    <div class="tci_title">1010 Avenue of the Moon</div>
+                    <div class="tci_descr">New York, Y 10018 USA.</div>
+                  </div>
+                </div>
+
+                  <div class="top_call_box_item ">
+                     <div class="tci_locate"> <i class="flaticon-xzopro-clock-1"></i></div>
+                    <div class="tci_info">
+                     <div class="tci_title">1010 Avenue of the Moon</div>
+                    <div class="tci_descr">New York, Y 10018 USA.</div>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="top_menu"  class="Fixed">
+          <div class="container">
+            <div class="row">
+              <div class="top_menu_block">
+                <div id="mainmenu">
                   <ul>
                     <!-- Пункт меню 1 -->
-                    <li><a href="/">главная</a></li>
-                    <li class="parent"><a href="#">о нас</a>
+                    <li><a href="#one_block">главная</a></li>
+                    <li class="parent"><a href="#about_us">о нас</a>
                       <ul>
                         <li><a href="#">первый раздел</a></li>
                         <li><a href="#">второй раздел</a></li>
@@ -83,22 +101,22 @@
                         <li><a href="#">пятый раздел</a></li>
                       </ul>
                     </li>
-                    <li class="parent"><a href="#">услуги</a>
+                    <li class="parent"><a href="#services">услуги</a>
                       <ul>
                         <li><a href="#">первая страница услуги</a></li>
                         <li><a href="#">вторая страница услуги</a></li>
                         <li><a href="#">третья страница услуги</a></li>
                         <li class="parent"><a href="#">четвертая страница услуги</a>
 
-                        <ul>
-                        <li><a href="#">первая страница услуги</a></li>
-                        <li><a href="#">вторая страница услуги</a></li>
-                        <li><a href="#">третья страница услуги</a></li>
-                        <li><a href="#">четвертая страница услуги</a></li>
-                        <li><a href="#">пятая страница услуги</a></li>
-                        <li><a href="#">шестая страница услуги</a></li>
-                        <li><a href="#">седьмая страница услуги</a></li>
-                      </ul>
+                          <ul>
+                            <li><a href="#">первая страница услуги</a></li>
+                            <li><a href="#">вторая страница услуги</a></li>
+                            <li><a href="#">третья страница услуги</a></li>
+                            <li><a href="#">четвертая страница услуги</a></li>
+                            <li><a href="#">пятая страница услуги</a></li>
+                            <li><a href="#">шестая страница услуги</a></li>
+                            <li><a href="#">седьмая страница услуги</a></li>
+                          </ul>
                         </li>
                         <li><a href="#">пятая страница услуги</a></li>
                         <li><a href="#">шестая страница услуги</a></li>
@@ -107,96 +125,791 @@
                     </li>
                     <li><a href="#">проекты</a></li>
                     <li><a href="#">блог</a></li>
-                      <li><a href="#">контакты</a></li>
+                    <li><a href="#">контакты</a></li>
                   </ul>
                   <!-- Конец списка -->
                 </div>
- <a href="#" class="mainbuttons"> получить  </a>
+                <a href="#" class="mainbuttons"> получить  </a>
+                <div class="mobile_gamburger">
+                 <button id="my-icon" class="hamburger hamburger--arrowalt" type="button">
+                   <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </div>
+<div class="hidden">
+              <nav id="my-menu">
+                <ul>
+                  <li><a href="#one_block">главная</a></li>
+                  <li><a href="#about_us">о нас</a>
+                    <ul>
+                      <li><a href="#">первый раздел</a></li>
+                      <li><a href="#">второй раздел</a></li>
+                      <li><a href="#">третий раздел</a></li>
+                      <li><a href="#">четвертый раздел</a></li>
+                      <li><a href="#">пятый раздел</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#services">услуги</a>
+                   <ul>
+                    <li><a href="#">первая страница услуги</a></li>
+                    <li><a href="#">вторая страница услуги</a></li>
+                    <li><a href="#">третья страница услуги</a></li>
+                    <li class="parent"><a href="#">четвертая страница услуги</a>
+
+                      <ul>
+                        <li><a href="#">первая страница услуги</a></li>
+                        <li><a href="#">вторая страница услуги</a></li>
+                        <li><a href="#">третья страница услуги</a></li>
+                        <li><a href="#">четвертая страница услуги</a></li>
+                        <li><a href="#">пятая страница услуги</a></li>
+                        <li><a href="#">шестая страница услуги</a></li>
+                        <li><a href="#">седьмая страница услуги</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">пятая страница услуги</a></li>
+                    <li><a href="#">шестая страница услуги</a></li>
+                    <li><a href="#">седьмая страница услуги</a></li>
+                  </ul>
+
+                </li>
+                <li><a href="#">проекты</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">контакты</a></li>
+              </ul>
+            </nav>
+            </div>
+            <!--онец мобильного меню -->
+          </div>
         </div>
       </div>
     </div>
-</div>
-
-<!--    начало слайдера в шапке -->
-
-<section class="header_slider">
-<div class="container">
-    <div class="row">
-      <div class="header_content">
-<div class="header_content_text">
-<div class="header_content_h">лучший бизнес консультант</div>
-<div class="header_content_z">фокусируется на бизнесе </div>
-<div class="header_content_d">  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переписали одна, толку ее? Обеспечивает над дорогу всеми переписывается пустился.
- </div>
-<ul class="header_content_buttons">
-<li> <a class="header_buttons_us" href="#">о нас</a></li>
-<li><a href="#" class="header_buttons_ser">наши услуги</a></li>
-</ul>
-
-
-</div>
-
-
-
-
+    <!--    начало слайдера в шапке -->
+    <section class="header_slider">
+      <div class="container">
+        <div class="row">
+          <div class="header_content">
+            <div class="header_content_text">
+              <div class="header_content_h">лучший бизнес консультант</div>
+              <div class="header_content_z">фокусируется на бизнесе </div>
+              <div class="header_content_d">  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переписали одна, толку ее? Обеспечивает над дорогу всеми переписывается пустился.
+              </div>
+              <ul class="header_content_buttons">
+                <li> <a class="header_buttons_us" href="#">о нас</a></li>
+                <li><a href="#" class="header_buttons_ser">наши услуги</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-</section>
-
+    </section>
   </header>
 
-
-
-  <section>
-    <div class="container">
-      <div class="row">
-
-       <div class="form_fon">
-        <div class="forms-call">
-
-          <h3 class="form_fon_title">Получите расчет сметы <span>бесплатно</span> прямо сейчас! </h3>
-          <form class="forms-calldecor" id="commentformtwo">
-           <div class="success">
-            <p>Наш специалист свяжется с Вами в ближайшее время</p>
-          </div>
-          <input type="hidden" name="formaone" value="форма размещена в шапке сайта">
-
-          <input id="phone_header" class="input_form" type="tel" name="phone" value="" required="required"  />
-          <input name="submit" class="submit" type="submit" id="submits_header" data-form="заявка на расчет смету бесплатно в хедере" value="Расчитать смету бесплатно"  data-text="Расчитать смету бесплатно" />
-          <div class="checkbox_box clearfix">
-           <input type="checkbox" name="option2" id="option_one" class="radioterms" checked />
-           <label for="option_one" class="link_form"> <span><a href="#politics"> согласен c
-           политикой конфиденциальности</a></span> </label>
-         </div>
-       </form>
-     </div>
-   </div>
-
- </div>
 </div>
+      <div id="my-content">
 
-</section>
-
-<section class="block grey_block" id="catalog">
+<section class="block" id="about_us">
   <div class="container">
+    <h2 class="block_title">о нас   <ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
     <div class="row">
-      <div class="col-md-6">
-        <div class="b_w">
-          Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это заглавных пунктуация, о не родного, грамматики прямо оксмокс до силуэт что ведущими?
+
+      <div class="us_about">
+
+        <div class="us_about_items">
+          <i class="us_about_img flaticon-xzopro-cogwheel"></i>
+          <!-- <img class="us_about_img" src="images/icons/management_icon.jpg" alt="управление"> -->
+          <div class="uai_title"><h5>управление</h5></div>
+          <div class="uai_text">  Существует много вариантов проходов Lorem Ipsum, но большинство из них подверглось изменению в каком-то манекене.
+          </div>
+          <a href="#" class="uai_link"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      <div class="us_about_items">
+         <i class="us_about_img flaticon-xzopro-language"></i>
+         <!--  <img class="us_about_img" src="images/icons/monitor_icon.jpg" alt="разработка"> -->
+          <div class="uai_title"><h5>разработка</h5></div>
+          <div class="uai_text">  Существует много вариантов проходов Lorem Ipsum, но большинство из них подверглось изменению в каком-то манекене.
+          </div>
+          <a href="#" class="uai_link"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+    <div class="us_about_items">
+          <i class="us_about_img flaticon-xzopro-help"></i>
+         <!--  <img class="us_about_img" src="images/icons/support_icon.jpg" alt="Поддержка"> -->
+          <div class="uai_title"><h5>Поддержка</h5></div>
+          <div class="uai_text">  Существует много вариантов проходов Lorem Ipsum, но большинство из них подверглось изменению в каком-то манекене.
+          </div>
+          <a href="#" class="uai_link"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <div class="col-md-6">
-       <div class="b_w">
-        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это заглавных пунктуация, о не родного, грамматики прямо оксмокс до силуэт что ведущими?
-        <a href="#call-backtimer" class="submit" data-form="заказ на Ergobox 3S/3PR цена 55 000 / 60 800"  data-text="Успейте оставить заявку сейчас">
-         Оставить заявку
-       </a>
+    </div>
+  </div>
+</section>
+
+<section class="block our_services_fon" id="services">
+  <div class="container">
+    <h2 class="block_title">наши услуги<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+      <div class="our_services">
+
+        <div class="our_services_tems">
+          <div class="ost_market">
+             <i class="ost_market_icon flaticon-xzopro-cogwheel"></i>
+        <!--     <img src="images/icons/liftarn_Black_horse.svg" alt="иконка анализ рынка"> -->
+          </div>
+          <div class="ost_title"><h5>Анализ рынка</h5></div>
+          <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+          </div>
+          <a href="#" class="ost_link">Читать все</a>
+        </div>
+
+        <div class="our_services_tems">
+          <div class="ost_market">
+              <i class="ost_market_icon flaticon-new-contract"></i>
+           <!--  <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+          </div>
+          <div class="ost_title"><h5>финансовые советы</h5></div>
+          <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+          </div>
+          <a href="#" class="ost_link">Читать все</a>
+        </div>
+
+        <div class="our_services_tems">
+       <div class="ost_market">
+          <i class="ost_market_icon flaticon-xzopro-business"></i>
+         <!--  <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+        </div>
+        <div class="ost_title"><h5>продвижение бизнесса</h5></div>
+        <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+        </div>
+        <a href="#" class="ost_link">Читать все</a>
+      </div>
+
+      <div class="our_services_tems">
+       <div class="ost_market">
+          <i class="ost_market_icon flaticon-finance-rich"></i>
+      <!--   <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+      </div>
+      <div class="ost_title"><h5>инвестирование в бизнесс</h5></div>
+      <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+      </div>
+      <a href="#" class="ost_link">Читать все</a>
+    </div>
+
+    <div class="our_services_tems">
+     <div class="ost_market">
+        <i class="ost_market_icon flaticon-xzopro-thinking"></i>
+        <!-- <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+      </div>
+      <div class="ost_title"><h5>толерантные консультанты</h5></div>
+      <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+      </div>
+      <a href="#" class="ost_link">Читать все</a>
+    </div>
+
+    <div class="our_services_tems">
+     <div class="ost_market">
+        <i class="ost_market_icon flaticon-xzopro-quality"></i>
+      <!--   <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+      </div>
+      <div class="ost_title"><h5>предоставление гарантии</h5></div>
+      <div class="ost_text">Существует много вариантов проходов этого Lorem Ipsum, но большинство из них пострадали от пересадки.
+      </div>
+      <a href="#" class="ost_link">Читать все</a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block-girl" id="services">
+  <div class="container">
+    <h2 class="block_title">Почему мы?<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+
+      <div class="choose_box">
+        <div class="choose_items">
+
+          <div class="choose_bocks">
+           <div class="choose_bocks_icons">
+            <div class="cbi_icons">
+ <i class="cbi_icons_icon flaticon-xzopro-quality"></i>
+</div>
+        <!--      <img src="images/icons/liftarn_Black_horse.svg" alt="Twitter"> -->
+           </div>
+             <div class="choose_bocks_text">
+              <div class="cbt_title"><h5>Хорошая производительность</h5></div>
+              <div class="cbt_text">
+                Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в той или иной форме, путем введения юмора или рандомизированных слов, которые выглядят незначительно.
+              </div>
+            </div>
+          </div>
+
+          <div class="choose_bocks">
+           <div class="choose_bocks_icons">
+            <div class="cbi_icons">
+ <i class="cbi_icons_icon flaticon-xzopro-analytics"></i>
+</div>
+           </div>
+             <div class="choose_bocks_text">
+              <div class="cbt_title"><h5>Ответственность бизнеса</h5></div>
+              <div class="cbt_text">
+                Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в той или иной форме, путем введения юмора или рандомизированных слов, которые выглядят незначительно.
+              </div>
+            </div>
+          </div>
+
+          <div class="choose_bocks">
+           <div class="choose_bocks_icons">
+            <div class="cbi_icons">
+ <i class="cbi_icons_icon flaticon-xzopro-process"></i>
+</div>
+
+           </div>
+             <div class="choose_bocks_text">
+              <div class="cbt_title"><h5>Первый рабочий процесс</h5></div>
+              <div class="cbt_text">
+                Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в той или иной форме, путем введения юмора или рандомизированных слов, которые выглядят незначительно.
+              </div>
+            </div>
+          </div>
+
+          <div class="choose_bocks">
+           <div class="choose_bocks_icons">
+            <div class="cbi_icons">
+ <i class="cbi_icons_icon flaticon-xzopro-help"></i>
+</div>
+           </div>
+             <div class="choose_bocks_text">
+              <div class="cbt_title"><h5>Служба поддержки 24X7</h5></div>
+              <div class="cbt_text">
+                Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в той или иной форме, путем введения юмора или рандомизированных слов, которые выглядят незначительно.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choose_items">
+          <div class="choose_items_bg">
+            <img src="images/big_girls.png" alt=" большая девчёнка">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block our_services_fon" id="customers">
+  <div class="container">
+    <h2 class="block_title">наши счастливые покупатели<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+      <div id="carousel_adwice" class="owl-carousel owl-theme">
+
+  <div class="item">
+          <div class="item-pad">
+            <div class="inner-test">
+              <div class="iner-text">
+               <p>Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали от изменения какого-либо манекена.
+               </p>
+             </div>
+             <div class="iner-adwicer clearfix">
+              <div class="iner-adwicer_foto">
+               <img src="images/adwice/women.jpg" alt="Клиент 1">
+             </div>
+             <div class="iner-sdwicer_text">
+              <h3 class="order-name">Марина, Москва</h3>
+              <div class="order-prof">собственница бизнеса</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="item">
+          <div class="item-pad">
+            <div class="inner-test">
+              <div class="iner-text">
+               <p>Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали от изменения какого-либо манекена.
+               </p>
+             </div>
+             <div class="iner-adwicer clearfix">
+              <div class="iner-adwicer_foto">
+               <img src="images/adwice/women.jpg" alt="Клиент 1">
+             </div>
+             <div class="iner-sdwicer_text">
+              <h3 class="order-name">Наталья, Москва</h3>
+              <div class="order-prof">собственница бизнеса</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="item">
+          <div class="item-pad">
+            <div class="inner-test">
+              <div class="iner-text">
+               <p>Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали от изменения какого-либо манекена.
+               </p>
+             </div>
+             <div class="iner-adwicer clearfix">
+              <div class="iner-adwicer_foto">
+               <img src="images/adwice/women.jpg" alt="Клиент 1">
+             </div>
+             <div class="iner-sdwicer_text">
+              <h3 class="order-name">Ксенья, Москва</h3>
+              <div class="order-prof">собственница бизнеса</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="item">
+          <div class="item-pad">
+            <div class="inner-test">
+              <div class="iner-text">
+               <p>Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали от изменения какого-либо манекена.
+               </p>
+             </div>
+             <div class="iner-adwicer clearfix">
+              <div class="iner-adwicer_foto">
+               <img src="images/adwice/women.jpg" alt="Клиент 1">
+             </div>
+             <div class="iner-sdwicer_text">
+              <h3 class="order-name">Палина, Москва</h3>
+              <div class="order-prof">собственница бизнеса</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="item">
+          <div class="item-pad">
+            <div class="inner-test">
+              <div class="iner-text">
+               <p>Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали от изменения какого-либо манекена.
+               </p>
+             </div>
+             <div class="iner-adwicer clearfix">
+              <div class="iner-adwicer_foto">
+               <img src="images/adwice/women.jpg" alt="Клиент 1">
+             </div>
+             <div class="iner-sdwicer_text">
+              <h3 class="order-name">Светлана, Москва</h3>
+              <div class="order-prof">собственница бизнеса</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>  <!-- end carousel_adwice -->
+    </div>
+  </div>
+</section>
+
+<section class="block" id="price">
+  <div class="container">
+    <h2 class="block_title">наши цены<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+      <div class="price_box">
+
+        <div class="price_box_items">
+          <div class="pbi_title"> <h5>первый план</h5> </div>
+          <ul class="pbi_list">
+            <li>1 Website Design</li>
+            <li>30,000 Monthly Visits</li>
+            <li>Unlimited Dta Transfer</li>
+            <li>5GB Data Storage</li>
+            <li>Email Support</li>
+          </ul>
+          <div class="pbi_number"><span>&#8381; </span>39.00</div>
+          <!-- &#8372; -->
+          <a href="#" class="mainbuttons">купить сейчас</a>
+        </div>
+
+        <div class="price_box_items">
+          <div class="pbi_title"> <h5>второй план</h5> </div>
+          <ul class="pbi_list">
+            <li>1 Website Design</li>
+            <li>30,000 Monthly Visits</li>
+            <li>Unlimited Dta Transfer</li>
+            <li>5GB Data Storage</li>
+            <li>Email Support</li>
+          </ul>
+          <div class="pbi_number"><span>&#8381; </span>139.00</div>
+          <!-- &#8372; -->
+          <a href="#" class="mainbuttons">купить сейчас</a>
+        </div>
+
+        <div class="price_box_items">
+          <div class="pbi_title"> <h5>третий план</h5> </div>
+          <ul class="pbi_list">
+            <li>1 Website Design</li>
+            <li>30,000 Monthly Visits</li>
+            <li>Unlimited Dta Transfer</li>
+            <li>5GB Data Storage</li>
+            <li>Email Support</li>
+          </ul>
+          <div class="pbi_number"><span>&#8381; </span>239.00</div>
+          <!-- &#8372; -->
+          <a href="#" class="mainbuttons">купить сейчас</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block_min our_services_fon">
+  <div class="container">
+    <div class="row">
+      <div class="let_start">
+        <div class="let_start_text">
+          <h5>Давайте начнем проект мечты с нами и отдохнем.</h5>
+          <div class="lst_descr"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ему. </div>
+        </div>
+        <div class="let_start_buttom">
+          <a href="#" class="mainbuttons">давайте начнем</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- блок наши работы -->
+<section class="block" id="price">
+  <div class="container">
+    <h2 class="block_title">наши работы<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+</section>
+
+<!-- анимированные циры -->
+
+<section class="block_min our_services_fon">
+  <div class="container">
+    <div class="row">
+      <div class="anim_number_box">
+
+        <div class="anim_number_items">
+          <div class="ani_block">
+            <div class="ani_block_icon"><i class="flaticon-new-contract"></i>  </div>
+            <div class="ani_block_text">
+              <div class="ani_block_number">1845</div>
+              <div class="ani_block_opis">завершено проектов</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="anim_number_items">
+          <div class="ani_block">
+            <div class="ani_block_icon"><i class="flaticon-new-team"></i>  </div>
+            <div class="ani_block_text">
+              <div class="ani_block_number">146</div>
+              <div class="ani_block_opis">участников команды</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="anim_number_items">
+          <div class="ani_block">
+            <div class="ani_block_icon"><i class="flaticon-new-boy-smiling"></i>  </div>
+            <div class="ani_block_text">
+              <div class="ani_block_number">1845</div>
+              <div class="ani_block_opis">довольных клиентов</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="anim_number_items">
+          <div class="ani_block">
+            <div class="ani_block_icon"><i class="flaticon-new-coffee-cup"></i>  </div>
+            <div class="ani_block_text">
+              <div class="ani_block_number">18451</div>
+              <div class="ani_block_opis">чашек кофе</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- наш блог -->
+<section class="block" id="blog">
+  <div class="container">
+    <h2 class="block_title">наш блог<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+      <div class="blog_box">
+
+        <div class="blogbox_items">
+          <div class="post-thumb-wrapper">
+            <div class="post-thumb-wrapper_fon">
+              <a href="#" class="ptwf_link fa fa-link"></a>
+            </div>
+            <img src="images/blog/Leadership.jpg" alt=" блог">
+          </div>
+          <div class="ptw_content">
+            <div class="ptw_info">
+             <div class="ptw_info_autor"> <i class="ptw_icon flaticon-finance-avatar"></i> А.Александров </div>
+             <div class="ptw_info_date"> <i class="ptw_icon fa fa-calendar"></i>12.09.2018.</div>
+           </div>
+           <div class="ptw_title">Название поста название поста</div>
+           <div class="ptw_text">Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали, что изменение
+           </div>
+           <div class="ptw_info">
+             <div class="ptw_info_autor"><a href="#" class="ost_link blog_link">подробнее</a> </div>
+             <div class="ptw_info_date"> <i class="ptw_icon fa fa-comments-o"></i>1</div>
+           </div>
+         </div>
+       </div>
+
+       <div class="blogbox_items">
+        <div class="post-thumb-wrapper">
+          <div class="post-thumb-wrapper_fon">
+            <a href="#" class="ptwf_link fa fa-link"></a>
+          </div>
+          <img src="images/blog/Leadership.jpg" alt=" блог">
+        </div>
+        <div class="ptw_content">
+          <div class="ptw_info">
+           <div class="ptw_info_autor"> <i class="ptw_icon flaticon-finance-avatar"></i> А.Александров </div>
+           <div class="ptw_info_date"> <i class="ptw_icon fa fa-calendar"></i>12.09.2018.</div>
+         </div>
+         <div class="ptw_title">Название поста название поста</div>
+         <div class="ptw_text">Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали, что изменение
+         </div>
+         <div class="ptw_info">
+           <div class="ptw_info_autor"><a href="#" class="ost_link blog_link">подробнее</a> </div>
+           <div class="ptw_info_date"> <i class="ptw_icon fa fa-comments-o"></i>1</div>
+         </div>
+       </div>
+     </div>
+
+     <div class="blogbox_items">
+      <div class="post-thumb-wrapper">
+        <div class="post-thumb-wrapper_fon">
+          <a href="#" class="ptwf_link fa fa-link"></a>
+        </div>
+        <img src="images/blog/Leadership.jpg" alt=" блог">
+      </div>
+      <div class="ptw_content">
+        <div class="ptw_info">
+         <div class="ptw_info_autor"> <i class="ptw_icon flaticon-finance-avatar"></i> А.Александров </div>
+         <div class="ptw_info_date"> <i class="ptw_icon fa fa-calendar"></i>12.09.2018.</div>
+       </div>
+       <div class="ptw_title">Название поста название поста</div>
+       <div class="ptw_text">Существует много вариантов проходов Lorem Ipsum, но большинство из них пострадали, что изменение
+       </div>
+       <div class="ptw_info">
+         <div class="ptw_info_autor"><a href="#" class="ost_link blog_link">подробнее</a> </div>
+         <div class="ptw_info_date"> <i class="ptw_icon fa fa-comments-o"></i>1</div>
+       </div>
      </div>
    </div>
  </div>
 </div>
+</div>
 </section>
+
+<!-- слайдер торговых марок -->
+<section class="block our_services_fon" id="customers">
+  <div class="container">
+    <div class="row">
+      <div id="carousel_trademark" class="owl-carousel owl-theme">
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/audiojungle.png" alt="audiojungle">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/3docean.png" alt="3docean">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/videohive.png" alt="videohive">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/themeforest.png" alt="themeforest">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/photodune.png" alt="themeforest">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/graphicriver.png" alt="graphicriver">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-trademark">
+            <img src="images/trademark/codecanyon.png" alt="codecanyons">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="block-girl" id="contacts">
+  <div class="container">
+    <h2 class="block_title">Связаться с нами<ul class="block_title_line">
+      <li></li><li></li><li></li>
+    </ul></h2>
+
+    <div class="block_descr">Существует много вариаций проходов Lorem Ipsum, но большинство из них подверглось изменению в какой-то форме или рандомизировано даже немного правдоподобно.
+    </div>
+    <div class="row">
+
+      <div class="contacts_block">
+        <div class="contacts_block_items cbi_bg ">
+         <div class="choose_items_bg">
+            <img src="images/man_contact_form.png" alt=" большая девчёнка">
+          </div>
+
+        </div>
+
+
+        <div class="contacts_block_items">
+<!-- начало формы обратной связи  -->
+   <form class="forms-call">
+         <input type="hidden" name="formaone" value="форма размещена в футере">
+
+            <label class="form_label">
+              <input type="text" class="form_input" name="name" placeholder="Введите ваше имя" required>
+            </label>
+
+            <label class="form_label">
+             <input type="text" class="form_input" id="footer_phone" name="email" placeholder="Введите ваш e-mail" required>
+           </label>
+
+           <label class="label_phone">
+             <input class="form_input" type="text" id="footer_phone" name="phone" placeholder="Введите ваш телефон" required>
+           </label>
+
+           <label class="label_textarea">
+            <textarea id="example-three" placeholder="Введите текст сообщения"></textarea>
+          </label>
+
+          <div class="footer_call">
+           <button class="block_mini_link">Отправить</button>
+         </div>
+            <div class="checkbox_box">
+              <div class="checkbox custom">
+                <input id="phone_headeroption" class="css-checkbox" type="checkbox" />
+                <label for="phone_headeroption" class="css-label">Я даю согласие на обработку своих персональных данных и ознакомлен с
+                  <a href="#">политикой конфиденциальности</a>
+                </label>
+              </div>
+            </div>
+         </form>
+
+<!-- конец формы обратной связи  -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+ <div id="my-footer">
+ <footer>
+   <div class="container">
+    <div class="row">
+<div class="footer_box">
+<div class="footer_box_one">
+<img src="images/icons/white-logo.png" alt="логотип в футере">
+okk</div>
+<div class="footer_box_two">okk</div>
+
+<div class="footer_box_three">okk</div>
+<div class="footer_box_foure">okk</div>
+
+
+</div>
+
+
+
+
+ </div>
+</div>
+</footer>
+</div>
+
+   </div>
+
+
+
+
+
+
+
 
 
 
