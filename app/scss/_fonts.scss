@@ -3,6 +3,7 @@
 /* font-family: "LatoRegular"; */
 @font-face {
 	font-family: "LatoRegular";
+	src: url("../fonts/LatoRegular/LatoRegular.eot");
 	src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
 	url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
@@ -12,45 +13,58 @@
 /* font-family: "LatoLight"; */
 @font-face {
 	font-family: "LatoLight";
+	src: url("../fonts/LatoLight/LatoLight.eot");
 	src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/LatoLight/LatoLight.woff") format("woff"),
 	url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 200;
 }
 /* font-family: "LatoBold"; */
 @font-face {
 	font-family: "LatoBold";
+	src: url("../fonts/LatoBold/LatoBold.eot");
 	src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/LatoBold/LatoBold.woff") format("woff"),
 	url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 /* font-family: "Poppins-Bold"; */
 @font-face {
 	font-family: "PoppinsBold";
+	src: url("../fonts/PoppinsBold/PoppinsBold.eot");
 	src: url("../fonts/PoppinsBold/PoppinsBold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/PoppinsBold/PoppinsBold.woff") format("woff"),
 	url("../fonts/PoppinsBold/PoppinsBold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 /* font-family: "Poppins-Bold"; */
 @font-face {
 	font-family: "PoppinsRegular";
+	src: url("../fonts/PoppinsRegular/Poppins-Regular.eot");
 	src: url("../fonts/PoppinsRegular/Poppins-Regular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/PoppinsRegular/Poppins-Regular.woff") format("woff"),
 	url("../fonts/PoppinsRegular/Poppins-Regular.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: normal;// 400
 }
+//  https://webfonts.pro/base-web-fonts/sans-serif-grotesque/493-century-gothic.html
 
 
-
-
+// 100 — тонкое начертание;
+// 200 — сверхсветлое;
+// 300 — светлое;
+// 400 — нормальное (аналогично normal);
+// 500 — среднее;
+// 600 — полужирное;
+// 700 — жирное (аналогично bold);
+// 800 — сверхжирное;
+// 900 — тяжёлое.
+// https://webfonts.pro/
 
 
 

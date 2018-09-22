@@ -25,6 +25,13 @@ var concat                = require('gulp-concat');
 // npm install --save-dev gulp-concat для обьединения js файлов
 var uglify                = require('gulp-uglifyjs');
 // npm i --save-dev gulp-uglifyjs
+var gulpUtil = require('gulp-util');
+var ftp   = require('gulp-ftp');
+var vinyFTP = require( 'vinyl-ftp' );
+// npm install --save-dev gulp-ftp
+// npm install --save-dev gulp-util
+//npm i vinyl-ftp --save-dev
+
 
 //  var criticalCss = require('gulp-critical-css');
 // этот пакет тестировать          $ npm install --save-dev gulp-critical-css
@@ -290,4 +297,53 @@ gulp.task('check-for-favicon-update', function(done) {
 //     .pipe(gulp.dest('app/iconsFon/'));
 // });
 
+gulp.task('ftp', function() {
+return gulp.src('src/**')
+pipe(ftp({
+    host: '12.34.567.89',
+    user: 'username',
+    pass: '232334',
+    remotePath: '/'
+}))
+.pipe(gutil.noop());
+});
+ // host: 'website.com',
 
+
+
+
+//  npm i vinyl-ftp
+
+
+// var gulp = require( 'gulp' );
+ //var gutil = require( 'gulp-util' );
+// var ftp = require( 'vinyl-ftp' );
+
+gulp.task( 'deploy', function () {
+
+    var conn = vinyFTP.create( {
+        host:     'mywebsite.com',
+        user:     'me',
+        password: 'mypass',
+        parallel: 10,
+        log:      gulpUtil.log
+    } );
+
+    var globs = [
+        // 'src/**',
+        // 'css/**',
+        // 'js/**',
+        // 'fonts/**',
+        // 'index.html'
+        'dist/**'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: './dist/', buffer: false } )
+        .pipe( conn.newer( 'therboy.com/stuff/tests/webpro/gulpdemo' ) ) // only upload newer files
+        .pipe( conn.dest( 'therboy.com/stuff/tests/webpro/gulpdemo' ) );
+
+} );
+// https://www.youtube.com/watch?v=R9ZZT2m58yo
