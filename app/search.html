@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Cтраница одиночных статей</title>
+  <title>Cтраница поиска</title>
   <meta name="description" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -185,15 +185,15 @@
       </div>
     </div>
     <!--    начало слайдера в шапке -->
-       <section class="header_otherpage header_single">
+       <section class="header_otherpage">
       <div class="container">
         <div class="row">
-          <h1 class="main_page_title">Советы от некоммерческого стандартного раннего усыновителя</h1>
+          <h1 class="main_page_title" >Страница поиска</h1>
           <div class="breadcrumbs_box">
             <ul class="breadcrumbs clearfix">
               <li> <a href="#">Главная</a></li>
-             <li> <a href="#">блог</a></li>
-              <li> <a href="#">пост</a></li>
+              <!-- <li> <a href="#">Главная</a></li> -->
+              <li> <a href="#">Поиск</a></li>
             </ul>
           </div>
         </div>
@@ -211,12 +211,39 @@
 
         <div class="main_content_block">
 
+
+<div class="page_search">
+  <h3 class="pagesearch_title">Сформируйте ваш поисковый запрос иначе</h3>
+<!-- код который нужно закинуть в отдельный файл searchform.php -->
+ <form role="search" type="get" id="searchform" class="search-form" action="<?php echo home_url( '/' ); ?>" >
+    <input class="search-field" type="search" value="" name="s" id="s" placeholder="Введите запрос..." onfocus="if (this.value == 'Введите запрос...') { this.value = 'Введите запрос..'; }" onblur="if(this.value == 'Введите запрос..') { this.value = 'Введите запрос...'; }" value="Введите запрос...">
+    <button type="submit" id="searchsubmit" name="submit" class="search-submit" ><i class="fa fa-search"></i></button>
+ </form>
+
+<!--  код который нужно закинуть в отдельный файл searchform.php -->
+ <h6 class="search_rezzult"> 0 результатов/тат для поискового запроса 'ytyyyyyyy'
+<!--   <?php $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e('');
+  echo $count . ' '; _e('результатов/тат'); wp_reset_query(); ?>
+
+  <span> для поискового запроса '<?php echo get_search_query(); ?>'</span>
+ -->
+</h6>
+</div>
+
+
+
+
+
+
+
+
+
           <div class="category_box">
             <div class="thamb_images">
               <img src="images/galary/1.jpg" alt="картинка">
             </div>
-<!--             <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
- -->
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
+
             <ul class="main_content_list">
               <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
               <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
@@ -224,125 +251,159 @@
               <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
             </ul>
 
-            <div class="entry-content entry_single">
+            <div class="entry-content">
               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
                 Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
                 Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
               </p>
-
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
-                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
-
-              </p>
-
-<blockquote> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
-                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
-</blockquote>
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
-                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
-              </p>
-
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
-                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
-              </p>
-
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
-                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
-              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
             </div>
 
-<div class="entry_footer">
+          </div>
 
-<a href="#" class="mainbuttons"> предыдущая запись</a>
-<a href="#" class="mainbuttons"> следующая запись</a>
+          <div class="category_box">
+            <div class="thamb_images">
+              <img src="images/galary/1.jpg" alt="картинка">
+            </div>
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
 
-</div>
+            <ul class="main_content_list">
+              <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
+              <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
+              <li> <a class="mcl_comment" href="#">1 коментарий</a></li>
+              <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
+            </ul>
 
-<div class="form_comment_box">
+            <div class="entry-content">
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
+                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
+              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
+            </div>
 
-<h3 class="form_comment_title">Напишите комментарий</h3>
-<div class="form_comment_descr">Все поля, отмеченные звездочкой (*), обязательны для заполнения   </div>
+          </div>
 
-<form action="">
+          <div class="category_box">
+            <div class="thamb_images">
+              <img src="images/galary/1.jpg" alt="картинка">
+            </div>
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
 
-<label for="first_comm"> <span>Имя *</span>
-         <input id="first_comm" type="text" class="form_input" name="name" required>
-</label>
+            <ul class="main_content_list">
+              <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
+              <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
+              <li> <a class="mcl_comment" href="#">1 коментарий</a></li>
+              <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
+            </ul>
 
-<label for="second_comm"> <span>E-mail *</span>
-         <input id="second_comm" type="text" class="form_input" name="name" required>
-</label>
-<label for="first_comm"> <span>Web-сайт</span>
-         <input id="first_comm" type="text" class="form_input" name="name" required>
-</label>
+            <div class="entry-content">
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
+                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
+              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
+            </div>
+          </div>
 
-<label for="first_comm"> <span>Ваш комментарий</span>
-         <textarea id="first_comm" type="text" class="form_input" name="name"></textarea>
-</label>
-<button class="mainbuttons">Отправить</button>
+          <div class="category_box">
+            <div class="thamb_images">
+              <img src="images/galary/1.jpg" alt="картинка">
+            </div>
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
 
+            <ul class="main_content_list">
+              <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
+              <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
+              <li> <a class="mcl_comment" href="#">1 коментарий</a></li>
+              <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
+            </ul>
 
+            <div class="entry-content">
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
+                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
+              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
+            </div>
 
+          </div>
 
+          <div class="category_box">
+            <div class="thamb_images">
+              <img src="images/galary/1.jpg" alt="картинка">
+            </div>
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
 
+            <ul class="main_content_list">
+              <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
+              <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
+              <li> <a class="mcl_comment" href="#">1 коментарий</a></li>
+              <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
+            </ul>
 
+            <div class="entry-content">
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
+                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
+              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
+            </div>
 
+          </div>
 
+          <div class="category_box">
+            <div class="thamb_images">
+              <img src="images/galary/1.jpg" alt="картинка">
+            </div>
+            <h2 class="main_content_title">Советы от некоммерческого стандартного раннего усыновителя</h2>
 
+            <ul class="main_content_list">
+              <li> <a class="mcl_autor" href="#">Имя Фамилия</a></li>
+              <li> <a class="mcl_date" href="#">21 июля 2018</a></li>
+              <li> <a class="mcl_comment" href="#">1 коментарий</a></li>
+              <li> <a class="mcl_tags" href="#">метка 1</a>, <a href="#">метка 2</a>, <a href="#">метка 3</a>   </li>
+            </ul>
 
+            <div class="entry-content">
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                Языкового переписывается имени, маленькая, свою большого грамматики живет до путь, все первую имеет проектах последний семантика гор это текст!
+                Языком своего раз, решила строчка предупреждал назад пояс послушавшись правилами переулка ты продолжил несколько моей, даже от всех рыбными о, гор меня.
+              </p>
+              <a href="#" class="mainbuttons"> прочесть все</a>
+            </div>
 
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</form>
-
-
-
-
-
-</div>
-
-
-
-
-          </div>  <!--  конец  category_box -->
-
-
-
-
-
-
-
-
+      <!-- Pagination -->
+            <nav class="pagination">
+              <ul>
+                  <li><span class="page-numbers prev inactive"><i class="fa fa-angle-left" aria-hidden="true"></i></span></li>
+                <li><span class="page-numbers current">1</span></li>
+                <li><a href="#" class="page-numbers">2</a></li>
+                  <li><a href="#" class="page-numbers">3</a></li>
+                  <li><a href="#" class="page-numbers">4</a></li>
+                  <li><a href="#" class="page-numbers">5</a></li>
+                  <li><a href="#" class="page-numbers">6</a></li>
+                  <li><a href="#" class="page-numbers">7</a></li>
+                  <li><a href="#" class="page-numbers">8</a></li>
+                  <li><a href="#" class="page-numbers">9</a></li>
+                <li><a href="#" class="page-numbers next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
 
 
 
         </div>
+
+
+
+
+
+
+
+
+
 
         <div class="main_sidebar_block">
 

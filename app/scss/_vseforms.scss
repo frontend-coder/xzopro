@@ -133,11 +133,40 @@ background-color: red !important;
 	align-items: flex-end;
 	justify-content: center;
 }
+.cbi_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.cbi_box_center {
+	padding: 50px 30px;
+	background-color: #000000;
+	color:#ebebeb;
 
+}
+.cbi_box {
+	padding: 10px 0;
+border-bottom: 1px solid #454547;
+}
 
+.cbi_box_title {
+	  @include font-size(18px);
+	  line-height: (32px / 18px);
+	font-family: "LatoBold", sans-serif;
 
-
+color: $color_blues;
+}
+.cbi_box_info {
+  @include font-size(15px);
+	  line-height: (27px / 15px);
+	    color:#ebebeb;
+}
+.cbi_box_info a {
+  @include font-size(15px);
+	  line-height: (27px / 15px);
+	  color:#ebebeb;
+}
 
 
 

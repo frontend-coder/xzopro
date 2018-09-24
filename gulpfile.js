@@ -88,7 +88,7 @@ gulp.task('css-libs', ['sass'], function () {
 
 gulp.task('scripts', function () {
  return gulp.src([
-'app/libs/jquery/jquery-3.2.1.min.js',
+'app/libs/jquery/jquery-2.2.4.min.js',
 // 'app/libs/jquery/jquery-migrate-1.2.1.min.js',
 'app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js',
 'app/libs/jQuery-Mask/jquery.mask.min.js',
