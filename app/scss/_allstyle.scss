@@ -329,13 +329,13 @@ h3.order-name {
 	border-radius: 5px;
 	@include trans;
 	padding: 90px 30px 30px 30px;
-	@include trans;
-	text-align: center;
+text-align: center;
 position: relative;
 }
 .price_box_items:hover {
 	transform: scale(1.05);
 	box-shadow: 0 2px 15px 5px #ddd;}
+
 	.pbi_popular {
 		@include font-size(18px);
 		color:#fff ;

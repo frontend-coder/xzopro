@@ -43,10 +43,7 @@ margin-left: 5px;
 }
 .header_top_social_right li a:hover {
  color: $white_color;
-
 }
-
-
 
 .top_line {
  background-color: $white_color;
@@ -147,246 +144,224 @@ display: none;
 }
 /* Оформление нового горизонтального меню */
 #mainmenu {
- height: 40px;
- position: relative;
- padding: 0;
- z-index: 10; }
-
- #mainmenu ul, #mainmenu ul ul, #mainmenu ul ul li {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-  #mainmenu ul {
-   padding-top: 10px;
-   text-align: center;
-   text-transform: uppercase; }
-
-   #mainmenu ul li {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-   }
-   #mainmenu ul li a {
-    color: #fff;
-    font-family: "PoppinsRegular", sans-serif;
-    padding: 30px 20px;
-    @include font-size(15px);
-    text-decoration: none;
-    @include trans;
-    position: relative;}
-    #mainmenu ul li a:hover {
-     padding: 30px 20px;}
-     #mainmenu > ul > li.parent > a{
-      padding: 30px 20px;
-     }
-     #mainmenu ul li a:hover:before {
-      top:20px;
-      left:50%;
-      margin-left: -10px;
-      position: absolute;
-      content: '';
-      width: 20px;
-      height: 2px;
-      background-color: #fff;
-     }
-
-     /** Это пример работы треугольника возле ссылким с выпадашкой  **/
-     #mainmenu > ul > li.parent:after {
-      content: "\f103";
-      color: #fff;
-      font-family: "FontAwesome";
-      display: inline-block;
-      vertical-align: middle;
-      margin: -2px 0 0 0;
-      font-size: 1.0rem; }
-
-      /*************************** Âûïàäàþùèå ïîäïóíêòû **/
-      #mainmenu ul li ul {
-       background: #302E4E;
-       border-radius: 3px;
-       @include trans;
-       text-transform: none;
-       opacity: 0;
-       visibility: hidden;
-       position: absolute;
-       left: 0;
-       top: 40px;
-       font-size: 12px;
-       margin-top: 20px;
-       height: auto;
-       min-width: 300px;
-       width: 100%; }
-
-       #mainmenu ul li:hover > ul {
-        border-top: 5px solid $color_blues;
-           border-bottom: 5px solid #302E4E;
-        opacity: 1;
-        visibility: visible;
-        transition: margin 0.3s ease 0s;
-        margin: 0;
-        z-index: 11; }
-        #mainmenu > ul > li > ul > li.parent > a::after {
-         content: "\f103";
-         font-family: "FontAwesome";
-         display: inline-block;
-         vertical-align: middle;
-         margin: 0px 0 0 8px;
-         font-size: 1.0rem; }
-         #mainmenu ul li ul li {
-          display: block;
-          position: relative;
-          left: 0;
-          height: auto;
-          text-align: left !important; }
-          #mainmenu ul li ul li a {
-           display: block;
-           padding: 10px 15px 10px 25px;
-           border: none;
-           font-size: .95rem;
-           text-transform: uppercase;
-           position: relative; }
-           #mainmenu ul li ul li a:hover:before {
-            display: none;
-           }
-
-           /*************************** Âûïàäàþùèå ïóíêòû âòîðîãî óðîâíÿ **/
-           #mainmenu ul li ul li ul {
-            border-top: 5px solid $color_blues;
-            top: 0;
-            left: 100%;
-            margin: 0 0 0 20px;
-           }
-
-           #mainmenu ul ul li:first-child > a {
-            border-radius: 3px 3px 0 0; }
-
-            #mainmenu > ul > li.parent:hover > a::before {
-             visibility: visible;
-             @include trans; }
-
-             .mainbuttons {
-              display: inline-block;
-              padding: 15px 20px 12px 20px;
-              border-radius: 5px;
-              color: #fff;
-              text-transform: uppercase;
-              @include font-size(15px);
-              line-height: (15px / 15px);
-              background: #0a6db7;
-              @include trans;
-             }
-             .mainbuttons:hover {
-              background-color: #253cac;
-             }
-
-             /* */
-             .header_slider {
-              background-image: url('../images/sliderheader/slide-bg-2.jpg');
-              background-size: cover;
-              background-repeat: no-repeat;
-                      background-position: top center;
-              min-height:754px;
-              position: relative;
-             }
-             .header_slider:before {
-              top: 0;
-              left: 0;
-              content: '';
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              background: rgba(#000, 0.65);
+height: 40px;
+position: relative;
+padding: 0;
+z-index: 10; }
+#mainmenu ul, #mainmenu ul ul, #mainmenu ul ul li {
+list-style: none;
+padding: 0;
+margin: 0; }
+#mainmenu ul {
+padding-top: 10px;
+text-align: center;
+text-transform: uppercase; }
+#mainmenu ul li {
+padding: 0;
+margin: 0;
+position: relative;
+display: inline-block;
+}
+#mainmenu ul li a {
+color: #fff;
+font-family: "PoppinsRegular", sans-serif;
+padding: 30px 20px;
+@include font-size(15px);
+text-decoration: none;
+@include trans;
+position: relative;}
+#mainmenu ul li a:hover {
+padding: 30px 20px;}
+#mainmenu > ul > li.parent > a{
+padding: 30px 20px;
+}
+#mainmenu ul li a:hover:before {
+top:20px;
+left:50%;
+margin-left: -10px;
+position: absolute;
+content: '';
+ width: 20px;
+ height: 2px;
+ background-color: #fff;
+}
+/** Это пример работы треугольника возле ссылким с выпадашкой  **/
+#mainmenu > ul > li.parent:after {
+content: "\f103";
+color: #fff;
+font-family: "FontAwesome";
+display: inline-block;
+vertical-align: middle;
+margin: -2px 0 0 0;
+font-size: 1.0rem; }
+/*************************** Âûïàäàþùèå ïîäïóíêòû **/
+#mainmenu ul li ul {
+background: #302E4E;
+border-radius: 3px;
+@include trans;
+text-transform: none;
+opacity: 0;
+visibility: hidden;
+position: absolute;
+left: 0;
+top: 40px;
+font-size: 12px;
+margin-top: 20px;
+height: auto;
+min-width: 300px;
+width: 100%; }
+#mainmenu ul li:hover > ul {
+border-top: 5px solid $color_blues;
+   border-bottom: 5px solid #302E4E;
+opacity: 1;
+visibility: visible;
+transition: margin 0.3s ease 0s;
+margin: 0;
+z-index: 11; }
+#mainmenu > ul > li > ul > li.parent > a::after {
+content: "\f103";
+font-family: "FontAwesome";
+display: inline-block;
+vertical-align: middle;
+margin: 0px 0 0 8px;
+font-size: 1.0rem; }
+#mainmenu ul li ul li {
+display: block;
+position: relative;
+left: 0;
+height: auto;
+text-align: left !important; }
+#mainmenu ul li ul li a {
+display: block;
+padding: 10px 15px 10px 25px;
+border: none;
+font-size: .95rem;
+text-transform: uppercase;
+position: relative; }
+#mainmenu ul li ul li a:hover:before {
+display: none;
+}
+/*************************** Âûïàäàþùèå ïóíêòû âòîðîãî óðîâíÿ **/
+#mainmenu ul li ul li ul {
+border-top: 5px solid $color_blues;
+top: 0;
+left: 100%;
+margin: 0 0 0 20px;
+}
+#mainmenu ul ul li:first-child > a {
+border-radius: 3px 3px 0 0; }
+#mainmenu > ul > li.parent:hover > a::before {
+visibility: visible;
+@include trans; }
+.mainbuttons {
+display: inline-block;
+padding: 15px 20px 12px 20px;
+border-radius: 5px;
+color: #fff;
+text-transform: uppercase;
+@include font-size(15px);
+line-height: (15px / 15px);
+background: #0a6db7;
+@include trans;
+}
+.mainbuttons:hover {
+background-color: #253cac;
+}
+/* */
+.header_slider {
+background-image: url('../images/sliderheader/slide-bg-2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+         background-position: top center;
+min-height:754px;
+position: relative;
+}
+.header_slider:before {
+top: 0;
+left: 0;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(#000, 0.65);
   /*             filter: blur(10px); */
-             }
-
-             .header_content {
-              min-height:754px;
-              position: relative;
-              display: flex;
-              align-items: center;
-             }
-             .header_content_text {
-              color: #ffffff;
-              text-transform: capitalize;
-              width: 70%;
-              position: relative;
-             }
-             .header_content_h {
-              @include font-size(50px);
-              line-height: (60px / 50px);
-              font-family: "PoppinsRegular", sans-serif;
-              margin-bottom: 10px;
-             }
-
-             .header_content_z {
-              @include font-size(59px);
-              line-height: (70px / 59px);
-              font-family: "PoppinsBold", sans-serif;
-              font-weight: bold;
-              margin-bottom: 20px;
-             }
-
-             .header_content_d {
-              font-family: "LatoLight", sans-serif;
-              @include font-size(20px);
-              line-height: (30px / 20px);
-
-              margin-bottom: 25px;
-             }
-
-             .header_content_buttons {
-              padding: 0;
-              margin: 0;
-             }
-             .header_content_buttons li {
-              display: inline-block;
-              margin-right: 30px;
-             }
-
-             .header_buttons_us {
-              display: inline-block;
-              padding: 17px 30px 14px 30px;
-              border-radius: 5px;
-              color: #fff;
-              text-transform: uppercase;
-              @include font-size(15px);
-              line-height: (15px / 15px);
-              border: 1px solid #0a6db7;
-              background: #0a6db7;
-              @include trans;
-             }
-             .header_buttons_us:hover {
-              background-color: #253cac;
-              border: 1px solid #253cac;
-             }
-
-             .header_buttons_ser {
-              display: inline-block;
-              padding: 17px 30px 14px 30px;
-              border-radius: 5px;
-              color: #fff;
-              text-transform: uppercase;
-              @include font-size(15px);
-              line-height: (15px / 15px);
-              background: transparent;
-              border: 1px solid #fff;
-              @include trans;
-   }
-   .header_buttons_ser:hover {
-    background-color: #253cac;
-    border: 1px solid #253cac;
-
-   }
-
-      #my-menu {
-      background-color: #302E4E;
-        }
-
-.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited {
- color: #fff;
-
+}
+.header_content {
+min-height:754px;
+position: relative;
+display: flex;
+align-items: center;
+}
+.header_content_text {
+color: #ffffff;
+text-transform: capitalize;
+width: 70%;
+position: relative;
+}
+.header_content_h {
+@include font-size(50px);
+line-height: (60px / 50px);
+font-family: "PoppinsRegular", sans-serif;
+margin-bottom: 10px;
+}
+.header_content_z {
+@include font-size(59px);
+line-height: (70px / 59px);
+font-family: "PoppinsBold", sans-serif;
+font-weight: bold;
+ margin-bottom: 20px;
+}
+.header_content_d {
+font-family: "LatoLight", sans-serif;
+@include font-size(20px);
+line-height: (30px / 20px);
+margin-bottom: 25px;
+}
+.header_content_buttons {
+padding: 0;
+margin: 0;
+}
+.header_content_buttons li {
+display: inline-block;
+margin-right: 30px;
+}
+.header_buttons_us {
+display: inline-block;
+padding: 17px 30px 14px 30px;
+border-radius: 5px;
+color: #fff;
+text-transform: uppercase;
+@include font-size(15px);
+line-height: (15px / 15px);
+border: 1px solid #0a6db7;
+background: #0a6db7;
+@include trans;
+}
+.header_buttons_us:hover {
+background-color: #253cac;
+border: 1px solid #253cac;
+}
+.header_buttons_ser {
+display: inline-block;
+padding: 17px 30px 14px 30px;
+border-radius: 5px;
+color: #fff;
+text-transform: uppercase;
+@include font-size(15px);
+line-height: (15px / 15px);
+background: transparent;
+border: 1px solid #fff;
+@include trans;
+}
+.header_buttons_ser:hover {
+background-color: #253cac;
+border: 1px solid #253cac;
 }
 
+#my-menu {
+background-color: #302E4E;
+}
 
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited {
+color: #fff;
+}

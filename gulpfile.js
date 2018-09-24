@@ -98,7 +98,7 @@ gulp.task('scripts', function () {
 'app/libs/jQuery.mmenu-master/dist/jquery.mmenu.all.js',
 'app/libs/jquery.PageScroll2id/jquery.PageScroll2id.min.js',
 'app/libs/owlcarousel/owl.carousel.min.js',
-
+'app/libs/wowmaster/dist/wow.min.js',
 'app/libs/jquery/common.js'
    ])
  .pipe(concat('libs.min.js'))
