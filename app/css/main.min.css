@@ -80,6 +80,55 @@ li {
 .hidden {
   display: none; }
 
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/icons.eot");
+  src: url("../fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2") format("woff2"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
+
+.icon {
+  font-family: "icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none; }
+
+.icon-opti1-03:before {
+  content: "\E001"; }
+
+.icon-opti1-04:before {
+  content: "\E002"; }
+
+.icon-opti1-05:before {
+  content: "\E003"; }
+
+.icon-opti1-06:before {
+  content: "\E004"; }
+
+.icon-opti1-07:before {
+  content: "\E005"; }
+
+.icon-opti1-08:before {
+  content: "\E006"; }
+
+.icon-opti1-09:before {
+  content: "\E007"; }
+
+.icon-opti1-10:before {
+  content: "\E008"; }
+
+.icon-opti1-11:before {
+  content: "\E009"; }
+
+.icon-opti1-12:before {
+  content: "\E00A"; }
+
+.icon-opti1-13:before {
+  content: "\E00B"; }
+
 /* // задать все переменные
  */
 /* p {
@@ -1417,7 +1466,32 @@ content: '\f095';
   font-size: 0.9375rem;
   line-height: 1.8;
   width: 54%;
-  margin: 0 auto 60px auto; }
+  margin: 0 auto 60px auto;
+  position: relative; }
+
+.block_descr .icon-arrows {
+  position: relative; }
+
+.block_descr .icon-arrows:before {
+  content: "\e900";
+  font-family: 'icomoon' !important;
+  top: 0;
+  left: -15px;
+  color: red;
+  position: absolute;
+  font-size: 20px; }
+
+.iconino {
+  position: relative; }
+
+.iconino:before {
+  content: "\E003";
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  color: red;
+  font-family: "icons";
+  font-size: 40px; }
 
 .block_title_line {
   position: absolute;
@@ -3510,7 +3584,201 @@ blockquote {
   line-height: 1.5;
   text-align: center; }
 
-/* Оформление блока комментариев */
+/*Comments
+------------------------------------------------------------ */
+/*Top
+---------------------------------------*/
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+div.comment-number {
+  margin: 30px 0 20px 10px; }
+
+div.comment-number h4 {
+  display: inline;
+  font-size: 2.2em;
+  font-weight: normal;
+  opacity: .7; }
+
+div.comment-number span a:link, div.comment-number span a:visited {
+  margin: 0 10px 0 20px;
+  padding: 8px 16px;
+  font-size: 1.2em; }
+
+/*Body
+---------------------------------------*/
+.comment-box {
+  background: #fff;
+  margin: 5px 0;
+  padding-top: 10px;
+  border: 1px solid #dedede; }
+
+#comments ul.children {
+  margin: 10px 0 0 96px;
+  clear: both; }
+
+div.c-grav {
+  float: left;
+  width: 48px;
+  margin: 10px 0 10px 30px; }
+
+div.c-grav img {
+  border: 4px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+div.c-body {
+  float: right;
+  width: 524px;
+  margin: 0 30px 0 0;
+  font-size: 1.3em; }
+
+ul.children div.c-body {
+  width: 428px; }
+
+ul.children ul.children div.c-body {
+  width: 328px; }
+
+div.c-body p, div.c-body span.c-permalink {
+  margin: 10px 0; }
+
+.c-head {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0 10px 10px 10px;
+  background: #efefef;
+  text-align: right; }
+
+.c-head span {
+  font-size: .9em;
+  color: #aaa;
+  font-weight: normal;
+  margin-left: .3em; }
+
+.c-head a:link, .c-head a:visited {
+  color: #555;
+  border-bottom: 1px dotted; }
+
+.c-head a:hover {
+  color: #000;
+  border-bottom: 1px solid;
+  text-decoration: none; }
+
+div.reply, div.cancel-comment-reply {
+  float: right; }
+
+div.reply {
+  padding: 10px 0; }
+
+div.reply a:link, div.reply a:visited {
+  color: #777;
+  font-size: .9em;
+  text-transform: lowercase;
+  border-bottom: 1px dotted; }
+
+div.reply a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
+  color: #13293e; }
+
+div.comment-number {
+  margin: 30px 0 20px 10px; }
+
+div.comment-number h4 {
+  display: inline;
+  font-size: 2.2em;
+  font-weight: normal;
+  opacity: .7; }
+
+.pagination div a:link, .pagination div a:visited, div.comment-number span a:link, div.comment-number span a:visited {
+  color: #777;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background: #e6e6e6;
+  background: rgba(154, 154, 154, 0.1); }
+
+.clear:after, li.comment:after, #sidebar ul li:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+div.skip-content {
+  display: none; }
+
+div#respond {
+  clear: both;
+  background: #fff;
+  margin: 5px 0;
+  border: 1px solid #dedede; }
+
+h5#postcomment {
+  margin: 10px;
+  padding: 10px 20px 10px 0;
+  font-size: 1.3em;
+  color: #555;
+  background: #efefef;
+  text-align: right; }
+
+div.cancel-comment-reply {
+  float: right; }
+
+form#commentform, p.logged-in {
+  margin: 30px;
+  font-size: 1.3em; }
+
+form#commentform label.comment-field {
+  display: block;
+  margin: 10px 0 5px 0; }
+
+form#commentform label span {
+  color: #999; }
+
+input.text-input, form#commentform textarea {
+  width: 583px;
+  padding: 5px;
+  font-size: 1.3em;
+  font-family: inherit;
+  border: 1px solid #d3d3d3; }
+
+input#author, input#email, input#url {
+  width: 350px; }
+
+form#commentform input#submit {
+  padding: 5px;
+  width: 150px; }
+
+div#comments-rss {
+  margin: 10px 0; }
+
+div#comments-rss a {
+  display: block;
+  color: #555;
+  padding: 0 0 0 21px;
+  text-decoration: none;
+  background: url(../images/rss-small.png) no-repeat 0 1px; }
+
+p.subscribe-to-comments, p.comments-rss {
+  margin: 0 0 10px 0;
+  font-size: .9em; }
+
+p.comments-rss a {
+  padding: 0 0 0 19px;
+  background: url(../images/feed-icon.png) no-repeat 0 0.15em; }
+
 .form_comment_box {
   width: 100%;
   margin: 0;

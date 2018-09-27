@@ -32,6 +32,14 @@ var vinyFTP = require( 'vinyl-ftp' );
 // npm install --save-dev gulp-util
 //npm i vinyl-ftp --save-dev
 
+var iconfont = require('gulp-iconfont');
+var iconfontCss = require('gulp-iconfont-css');
+// npm install --save-dev gulp-iconfont gulp-iconfont-css
+// эти два плагина отвечают за создания иконочных шрифтов из SVG
+
+
+
+
 
 //  var criticalCss = require('gulp-critical-css');
 // этот пакет тестировать          $ npm install --save-dev gulp-critical-css
@@ -117,6 +125,8 @@ return gulp.src('app/images/**/*')
  progresive:true,
  svgoPlugins: [{removeViewbox:false}],
  use:[pngquant()],
+ quality: "65-70",
+ speed: 5,
    optimizationLevel: 3
 })))
 .pipe(gulp.dest('dist/images'));
@@ -200,33 +210,31 @@ gulp.task('sprite', function () {
     spriteData.css.pipe(gulp.dest('app/sprites/')); // путь, куда сохраняем стили
 });
 
-// Generate the icons.
+// Generate the icons.  Your picture should be 260x260  or more for optimal results.
 gulp.task('genfav', function(done) {
     realFavicon.generateFavicon({
-        masterPicture: 'app/favicon/basic.png',
+        masterPicture: 'app/favicon/cropped.png',
         dest: 'app/images/favicon/',
         iconsPath: 'images/favicon',
         design: {
             ios: {
-                pictureAspect: 'backgroundAndMargin', //Add a solid, plain background to fill the transparent regions.
-                backgroundColor: '#ffffff',
-                margin: '14%',
+                pictureAspect: 'noChange',
                 assets: {
-                    ios6AndPriorIcons: false,
-                    ios7AndLaterIcons: false,
+                    ios6AndPriorIcons: true,
+                    ios7AndLaterIcons: true,
                     precomposedIcons: false,
                     declareOnlyDefaultIcon: true
                 }
             },
             desktopBrowser: {},
             windows: {
-                pictureAspect: 'whiteSilhouette', //Use a white silhouette version of the favicon
-                backgroundColor: '#da532c',
+                pictureAspect: 'noChange',
+                backgroundColor: '#2b5797',
                 onConflict: 'override',
                 assets: {
-                    windows80Ie10Tile: false,
+                    windows80Ie10Tile: true,
                     windows10Ie11EdgeTiles: {
-                        small: false,
+                        small: true,
                         medium: true,
                         big: false,
                         rectangle: false
@@ -235,7 +243,7 @@ gulp.task('genfav', function(done) {
             },
             androidChrome: {
                 pictureAspect: 'noChange',
-                themeColor: '#da532c',
+    themeColor: '#ff0000',
                 manifest: {
                     display: 'standalone',
                     orientation: 'notSet',
@@ -254,7 +262,10 @@ gulp.task('genfav', function(done) {
         },
         settings: {
             scalingAlgorithm: 'Mitchell',
-            errorOnImageTooSmall: false
+            errorOnImageTooSmall: false,
+            readmeFile: false,
+            htmlCodeFile: false,
+            usePathAsIs: false
         },
         markupFile: FAVICON_DATA_FILE
     }, function() {
@@ -262,8 +273,10 @@ gulp.task('genfav', function(done) {
     });
 });
 
+
+
 // Inject the favicon markups in your HTML pages.
-gulp.task('injectfav', function() {
+gulp.task('inject', function() {
     return gulp.src(['app/*.html'])
         .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
         .pipe(gulp.dest('app'));
@@ -279,52 +292,16 @@ gulp.task('check-for-favicon-update', function(done) {
     });
 });
 
-// работает для не битых файлов svg если не работает скрипт - замети файл
-// gulp.task('Iconfont', function(){
-//   return gulp.src(['app/iconsFon/*.svg'])
-//     .pipe(iconfont({
-//       fontName: 'myfont', // required
-//       fontHeight: 1001,
-//       normalize:true,
-//       prependUnicode: true, // recommended option
-//       formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
-//       timestamp: runTimestamp, // recommended to get consistent builds when watching files
-//     }))
-//       .on('glyphs', function(glyphs, options) {
-//         // CSS templating, e.g.
-//         console.log(glyphs, options);
-//       })
-//     .pipe(gulp.dest('app/iconsFon/'));
-// });
-
-gulp.task('ftp', function() {
-return gulp.src('src/**')
-pipe(ftp({
-    host: '12.34.567.89',
-    user: 'username',
-    pass: '232334',
-    remotePath: '/'
-}))
-.pipe(gutil.noop());
-});
- // host: 'website.com',
 
 
 
 
 //  npm i vinyl-ftp
-
-
-// var gulp = require( 'gulp' );
- //var gutil = require( 'gulp-util' );
-// var ftp = require( 'vinyl-ftp' );
-
-gulp.task( 'deploy', function () {
-
+gulp.task( 'ftp', function () {
     var conn = vinyFTP.create( {
-        host:     'mywebsite.com',
-        user:     'me',
-        password: 'mypass',
+     host:     'cl21222.tmweb.ru',
+        user:     'cl21222',
+        password: 'bNam8ykWMuYP',
         parallel: 10,
         log:      gulpUtil.log
     } );
@@ -342,8 +319,39 @@ gulp.task( 'deploy', function () {
     // turn off buffering in gulp.src for best performance
 
     return gulp.src( globs, { base: './dist/', buffer: false } )
-        .pipe( conn.newer( 'therboy.com/stuff/tests/webpro/gulpdemo' ) ) // only upload newer files
-        .pipe( conn.dest( 'therboy.com/stuff/tests/webpro/gulpdemo' ) );
+        .pipe( conn.newer( '/public_html/blog/' ) ) // only upload newer files
+        .pipe( conn.dest( '/public_html/blog/' ) );
 
 } );
+
+//  /public_html/ - файлы залетают в каталог public_html
+//  /public_html/blog/ - файлы залетают в каталог public_html/blog
 // https://www.youtube.com/watch?v=R9ZZT2m58yo
+
+// task для создания иконочных шрифтов
+
+var fontName = 'icons';
+
+gulp.task('iconf', function(){
+  gulp.src(['app/svgforicon/*.svg'])
+    .pipe(iconfontCss({
+      fontName: fontName,
+      path: 'app/templates/_icons.css',
+      targetPath: '../../scss/_icons.css',
+      fontPath: '../fonts/icons/'
+    }))
+    .pipe(iconfont({
+  timestamp: runTimestamp,
+ //  fontHeight: 1001,
+   normalize:true,
+   prependUnicode: true, // recommended option
+     formats: ["ttf", "eot", "svg", "woff", "woff2"],
+      fontName: fontName
+     }))
+    .pipe(gulp.dest('app/fonts/icons/'));
+});
+
+
+// важные файлы размещены в каталоге templates/
+// нужно использовать SVG большого размера хорошего качества
+

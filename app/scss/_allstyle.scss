@@ -23,7 +23,37 @@
 	line-height: (27px / 15px);
 	width: 54%;
 	margin: 0 auto 60px auto;
+position: relative;
+
 }
+
+.block_descr .icon-arrows {
+position: relative;
+	}
+.block_descr .icon-arrows:before {
+	content: "\e900";
+ font-family: 'icomoon' !important;
+ top:0;
+ left:-15px;
+
+color:red;
+position: absolute;
+font-size: 20px;
+
+}
+.iconino  {
+position: relative;
+
+}
+.iconino:before  {
+content: "\E003";
+position: absolute;
+top:60px;
+left:20px;
+color:red;
+	font-family: "icons";
+	font-size:40px;
+	}
 .block_title_line {
 	position: absolute;
 	top:29px;

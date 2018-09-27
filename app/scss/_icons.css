@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icons/icons.woff2') format('woff2'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+.icon {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-opti1-03:before {
+	content: "\E001";
+}
+
+.icon-opti1-04:before {
+	content: "\E002";
+}
+
+.icon-opti1-05:before {
+	content: "\E003";
+}
+
+.icon-opti1-06:before {
+	content: "\E004";
+}
+
+.icon-opti1-07:before {
+	content: "\E005";
+}
+
+.icon-opti1-08:before {
+	content: "\E006";
+}
+
+.icon-opti1-09:before {
+	content: "\E007";
+}
+
+.icon-opti1-10:before {
+	content: "\E008";
+}
+
+.icon-opti1-11:before {
+	content: "\E009";
+}
+
+.icon-opti1-12:before {
+	content: "\E00A";
+}
+
+.icon-opti1-13:before {
+	content: "\E00B";
+}

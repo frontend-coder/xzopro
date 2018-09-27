@@ -94,16 +94,11 @@ width: 100%;
 .hidden {
 	display: none;
 }
-
+ @import '_icons';
 @import '_fonts.scss';
 @import '_header.scss';
 @import '_allstyle.scss';
 @import '_aboutus.scss';
-
-
-
 @import '_category.scss';
-
-
 @import '_vseforms.scss';
 @import '_media.scss';
