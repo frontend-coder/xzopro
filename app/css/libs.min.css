@@ -6168,7 +6168,7 @@ h3.order-name {
   padding: 0;
   overflow: hidden;
   cursor: pointer;
-  background: url("../images/yandex-card.jpg") #ffffff no-repeat;
+  background: url("../img/yandex-card.jpg") #ffffff no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -6277,7 +6277,7 @@ footer {
 
 .footer_fon {
   padding: 70px 0;
-  background: #151414 url("../images/footer-bg.png") no-repeat center center;
+  background: #151414 url("../img/footer-bg.png") no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -6806,6 +6806,224 @@ footer {
 .mfp-arrow-right:after {
   border-left: 17px solid #FFF;
   margin-left: 39px;
+}
+
+.forms-call {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.form_label {
+  width: 48%;
+  margin: 10px 0;
+  display: block;
+}
+
+.label_phone, .label_textarea {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  display: block;
+}
+
+.form_input {
+  display: block;
+  width: 100%;
+  line-height: 47px;
+  text-indent: 10px;
+  border: 1px solid #ddd;
+  color: #505050;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #ffffff !important;
+}
+
+.form_input:hover {
+  background-color: #aaaaaa;
+  color: #505050;
+}
+
+.form_input:focus {
+  background-color: #ffffff !important;
+  color: #505050;
+}
+
+.form_input:focus-within {
+  background-color: #ffffff !important;
+  color: #505050;
+}
+
+.form_input:visited {
+  background-color: red !important;
+  color: #505050;
+}
+
+.form_input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #ffffff !important;
+  /* Цвет фона */
+  -webkit-text-fill-color: #aaaaaa !important;
+  /* цвет текста */
+  color: #505050 !important;
+  /* цвет текста */
+}
+
+.cbi_bg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cbi_center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cbi_box_center {
+  padding: 50px 30px;
+  background-color: #000000;
+  color: #ebebeb;
+}
+
+.cbi_box {
+  padding: 10px 0;
+  border-bottom: 1px solid #454547;
+}
+
+.cbi_box_title {
+  font-size: 1.125rem;
+  line-height: 1.77778;
+  font-family: "LatoBold", sans-serif;
+  color: #0a6db7;
+}
+
+.cbi_box_info {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: #ebebeb;
+}
+
+.cbi_box_info a {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: #ebebeb;
+}
+
+#example-three {
+  display: block;
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  text-indent: 10px;
+  padding-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dddddd;
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
+  outline: none;
+}
+
+.footer_call .block_mini_link {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  line-height: 1;
+  padding: 15px 20px 12px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
+  background: #0a6db7;
+  -webkit-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  outline: none;
+}
+
+.checkbox_box {
+  width: 100%;
+  color: white;
+  text-align: right;
+  padding: 0px;
+}
+
+.checkbox_box input[type="checkbox"].css-checkbox {
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
+}
+
+.checkbox_box input[type="checkbox"].css-checkbox + label.css-label {
+  background-image: url(../img/checkbox_yes.png);
+  padding-left: 22px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 1;
+  color: #dddddd;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  background-repeat: no-repeat;
+}
+
+.css-label a {
+  color: #dedede;
+  -webkit-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+
+.css-label a:hover {
+  color: #b2b0b0;
 }
 
 .footer_wrap {
