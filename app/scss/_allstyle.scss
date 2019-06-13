@@ -291,6 +291,7 @@ color:red;
 	width: 100%;
 	height: auto;
 }
+.carousel_ourteam_item,
 .carousel_adwice_item {
 	padding: 0 10px;
 }
@@ -1380,7 +1381,9 @@ color: $color_blues;
         color: rgb(178, 176, 176);
 }
 
-
+#otherpage_fon_gray .block_one_image_over {
+        background-color:#f7f7f7;
+}
 
 
 
