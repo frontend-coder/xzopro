@@ -1,37 +1,36 @@
-@import '_var.scss';
-
 .header_block {
- background-color:  $color_topline;
- padding: 0;
- margin: 0;
+        background-color: rgb(48, 48, 56);
+        padding: 0px;
+        margin: 0px;
 }
 .header_top {
- height: 50px;
+        height: 50px;
 }
+
 .header_top_social {
- height: 50px;
- padding: 0;
- margin: 0;
- display: flex;
- justify-content: space-between;
- align-items: center;
+        height: 50px;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
 }
+
 .header_top_social_left {
- color:#fff;
- position: relative;
- padding-left: 10px;
- font-weight: 400;
- @include font-size(15px);
- line-height: (22px / 15px);
+        color: rgb(255, 255, 255);
+        position: relative;
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 1.46667;
 }
 .header_top_social_left span {
 display: inline-block;
 margin-left: 5px;
 }
 
-.header_top_social_right {
-
-}
 .header_top_social_right li {
  display: inline-block;
 }
@@ -47,15 +46,16 @@ margin-left: 5px;
 
 .top_line {
  background-color: $white_color;
- height: 90px;
+ // height: 90px;
  width: 100%;
  z-index: 100;
+ padding: 20px 0;
 
 }
 
 .top_line_box {
  display: flex;
- height: 90px;
+ // height: 90px;
  align-items: center;
  justify-content: space-between;
 }
@@ -81,7 +81,7 @@ margin-left: 5px;
 }
 .top_call_box_item {
 /*  width: 33.33333%; */
- height: 42px;
+ min-height: 42px;
  padding-left: 3px;
  padding-right: 3px;
  margin-right: 20px;
@@ -269,7 +269,7 @@ background-color: #253cac;
 }
 /* */
 .header_slider {
-background-image: url('../images/sliderheader/slide-bg-2.jpg');
+background-image: url('../img/sliderheader/slide-bg-2.jpg');
 background-size: cover;
 background-repeat: no-repeat;
          background-position: top center;
@@ -364,4 +364,38 @@ background-color: #302E4E;
 
 .mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited {
 color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header_fon {
+	background-color: red;
+	min-height: 600px;
+
+}
+
+header {
+text-align: center;
+color:#fff;
 }
