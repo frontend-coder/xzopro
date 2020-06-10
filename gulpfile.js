@@ -91,8 +91,7 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', done => {
   var jsFiles = [
-'app/libs/plagins/jquery/jquery.min.js',
-'app/libs/plagins/slick/slick.min.js',
+'app/libs/plagins/jquery/jquery.min.js', 
 'app/libs/plagins/slick/slick.min.js',
 'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
 
