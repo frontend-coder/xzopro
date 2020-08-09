@@ -9126,20 +9126,21 @@ body textarea:required:valid {
   display: none;
 }
 
+#carousel_ourteam ul.slick-dots,
 .our_services_fon .slick-dots {
   bottom: -25px;
 }
 
 #carousel_trademark .slick-dots li button:before,
+#carousel_ourteam ul.slick-dots li button:before,
+#carousel_trademark .slick-dots li button:before,
 #carousel_adwice .slick-dots li button:before,
 .header_slider_wraper .slick-dots li button:before {
   color: #0a6db7;
   font-size: 12px;
-}
-
-#carousel_trademark .slick-dots li button:before,
-#carousel_adwice .slick-dots li button:before {
-  font-size: 9px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .slick-prev:before,
@@ -9279,6 +9280,9 @@ body textarea:required:valid {
   font-size: .95rem;
   text-transform: uppercase;
   position: relative;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #mainmenu ul li ul li a:hover:before {
@@ -9323,24 +9327,26 @@ body textarea:required:valid {
   background-color: #253cac;
 }
 
+.header_page_bunner,
 .header_slider {
-  background-image: url("../img/sliderheader/slide-bg-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 754px;
   position: relative;
+}
+
+.header_slider {
+  background-image: url("../img/sliderheader/slide-bg-2.jpg");
+  min-height: 754px;
 }
 
 .header_page_bunner {
   background-image: url("../img/sliderheader/slide-bg-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   padding: 110px 0;
-  position: relative;
+  background-attachment: fixed;
 }
 
+.header_slider:before,
 .header_page_bunner:before {
   top: 0;
   left: 0;
@@ -9348,8 +9354,8 @@ body textarea:required:valid {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.65);
-  /*             filter: blur(10px); */
+  background: #000;
+  opacity: 0.65;
 }
 
 .main_page_title {
@@ -9396,8 +9402,11 @@ body textarea:required:valid {
   display: none;
 }
 
+.breadcrumbs span,
 .breadcrumbs a {
-  float: left;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   font-size: 1.125rem;
   line-height: 1.77778;
   text-decoration: none;
@@ -9405,15 +9414,8 @@ body textarea:required:valid {
   position: relative;
 }
 
-.header_slider:before {
-  top: 0;
-  left: 0;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(48, 46, 78, 0.65);
-  /*             filter: blur(10px); */
+.breadcrumbs a:hover {
+  color: #fff;
 }
 
 .header_content {
@@ -10692,7 +10694,8 @@ button.mfp-arrow {
           transform: translateY(-50%);
 }
 
-.mfp-arrow:before, .mfp-arrow:after {
+.mfp-arrow:before,
+.mfp-arrow:after {
   margin: 0;
   border: none;
   width: 1rem;
@@ -10728,11 +10731,13 @@ button.mfp-arrow {
   margin-left: 1rem;
 }
 
-.mfp-arrow-left:hover:before, .mfp-arrow-left:active:before {
+.mfp-arrow-left:hover:before,
+.mfp-arrow-left:active:before {
   margin-left: 1rem;
 }
 
-.mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
+.mfp-arrow-left:hover:after,
+.mfp-arrow-left:active:after {
   margin-left: 0;
 }
 
@@ -11504,47 +11509,6 @@ footer {
   margin-bottom: 24px;
 }
 
-.breadcrumbs_box {
-  text-align: center;
-}
-
-.breadcrumbs {
-  overflow: hidden;
-  display: inline-block;
-}
-
-.breadcrumbs li {
-  padding: .2rem 2.5rem .2rem 2.5rem;
-  float: left;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.breadcrumbs li::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -5px;
-  content: "\f101";
-  font-family: "FontAwesome";
-}
-
-.breadcrumbs li:last-child:before {
-  display: none;
-}
-
-.breadcrumbs a {
-  float: left;
-  font-size: 1.125rem;
-  line-height: 1.77778;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-}
-
 .otherpage_fon {
   background-color: #ffffff;
 }
@@ -11669,7 +11633,6 @@ footer {
 }
 
 .othepage_command_items {
-  /*  // width: 30%; */
   border: 1px solid #dddddd;
   border-radius: 5px;
   -webkit-transition: all 0.2s ease;
@@ -11900,7 +11863,7 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  background: #959595;
+  background: #0a6db7;
   bottom: 0;
 }
 
@@ -11911,7 +11874,7 @@ footer {
   left: 2px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: #444444;
+  background: #efefef;
   display: block;
   position: relative;
 }

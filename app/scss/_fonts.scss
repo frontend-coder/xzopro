@@ -5,28 +5,30 @@
 	font-family: "LatoRegular";
 	src: url("../fonts/LatoRegular/LatoRegular.eot");
 	src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
-	url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+		url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+		url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
+
 /* font-family: "LatoLight"; */
 @font-face {
 	font-family: "LatoLight";
 	src: url("../fonts/LatoLight/LatoLight.eot");
 	src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/LatoLight/LatoLight.woff") format("woff"),
-	url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+		url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+		url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 200;
 }
+
 /* font-family: "LatoBold"; */
 @font-face {
 	font-family: "LatoBold";
 	src: url("../fonts/LatoBold/LatoBold.eot");
 	src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/LatoBold/LatoBold.woff") format("woff"),
-	url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+		url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+		url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: bold;
 }
@@ -36,8 +38,8 @@
 	font-family: "PoppinsBold";
 	src: url("../fonts/PoppinsBold/PoppinsBold.eot");
 	src: url("../fonts/PoppinsBold/PoppinsBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/PoppinsBold/PoppinsBold.woff") format("woff"),
-	url("../fonts/PoppinsBold/PoppinsBold.ttf") format("truetype");
+		url("../fonts/PoppinsBold/PoppinsBold.woff") format("woff"),
+		url("../fonts/PoppinsBold/PoppinsBold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: bold;
 }
@@ -47,11 +49,12 @@
 	font-family: "PoppinsRegular";
 	src: url("../fonts/PoppinsRegular/Poppins-Regular.eot");
 	src: url("../fonts/PoppinsRegular/Poppins-Regular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/PoppinsRegular/Poppins-Regular.woff") format("woff"),
-	url("../fonts/PoppinsRegular/Poppins-Regular.ttf") format("truetype");
+		url("../fonts/PoppinsRegular/Poppins-Regular.woff") format("woff"),
+		url("../fonts/PoppinsRegular/Poppins-Regular.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;// 400
+	font-weight: normal; // 400
 }
+
 //  https://webfonts.pro/base-web-fonts/sans-serif-grotesque/493-century-gothic.html
 
 
@@ -68,263 +71,767 @@
 
 
 
-@font-face{font-family:Flaticon-custom;
-	src:url("../fonts/flaticon/Flaticon-custom.eot");
-	src:url("../fonts/flaticon/Flaticon-custom.eot?#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/Flaticon-custom.woff") format("woff"),url(Flaticon-custom.ttf) format("truetype"),
-	url("../fonts/flaticon/Flaticon-custom.svg#Flaticon") format("svg");
-	font-weight:400;
-	font-style:normal;
+@font-face {
+	font-family: Flaticon-custom;
+	src: url("../fonts/flaticon/Flaticon-custom.eot");
+	src: url("../fonts/flaticon/Flaticon-custom.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/Flaticon-custom.woff") format("woff"), url(Flaticon-custom.ttf) format("truetype"),
+		url("../fonts/flaticon/Flaticon-custom.svg#Flaticon") format("svg");
+	font-weight: 400;
+	font-style: normal;
 }
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-		@font-face{font-family:Flaticon-custom;
-			src:url("../fonts/flaticon/Flaticon-custom.svg#Flaticon") format("svg");
-	}}
-	[class*=" flaticon-custom-"]:after,
-	[class*=" flaticon-custom-"]:before,
-	[class^=flaticon-custom-]:after,
-	[class^=flaticon-custom-]:before{
-		font-family:Flaticon-custom;font-style:normal;}
-	.flaticon-custom-arrows:before{content:"\f100"}
-	.flaticon-custom-commerce:before{content:"\f101"}
-	.flaticon-custom-graphic:before{content:"\f102"}
-	.flaticon-custom-graphic-1:before{content:"\f103"}
-	.flaticon-custom-handshake:before{content:"\f104"}
-	.flaticon-custom-headphones:before{content:"\f105"}
-	.flaticon-custom-interface:before{content:"\f106"}
-	.flaticon-custom-layers:before{content:"\f107"}
-	.flaticon-custom-light-bulb:before{content:"\f108"}
-	.flaticon-custom-mail:before{content:"\f109"}
-	.flaticon-custom-share:before{content:"\f10a"}
-	.flaticon-custom-target:before{content:"\f10b"}
-	.flaticon-custom-text-on-paper-sheet-sketch:before{content:"\f10c";
-	}
 
-@font-face{font-family:Flaticon-finance;
-	src:url("../fonts/flaticon/Flaticon-finance.eot");
-	src:url("../fonts/flaticon/Flaticon-finance.eot?#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/Flaticon-finance.woff") format("woff"),
-	url("../fonts/flaticon/Flaticon-finance.ttf") format("truetype"),
-	url("../fonts/flaticon/Flaticon-finance.svg#Flaticon") format("svg");
-	font-weight:400;
-	font-style:normal;}
-	@media screen and (-webkit-min-device-pixel-ratio:0)
-	{@font-face{font-family:Flaticon-finance;
-		src:url("../fonts/flaticon/Flaticon-finance.svg#Flaticon") format("svg");
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Flaticon-custom;
+		src: url("../fonts/flaticon/Flaticon-custom.svg#Flaticon") format("svg");
 	}
-}[class*=" flaticon-finance-"]:after,
+}
+
+[class*=" flaticon-custom-"]:after,
+[class*=" flaticon-custom-"]:before,
+[class^=flaticon-custom-]:after,
+[class^=flaticon-custom-]:before {
+	font-family: Flaticon-custom;
+	font-style: normal;
+}
+
+.flaticon-custom-arrows:before {
+	content: "\f100"
+}
+
+.flaticon-custom-commerce:before {
+	content: "\f101"
+}
+
+.flaticon-custom-graphic:before {
+	content: "\f102"
+}
+
+.flaticon-custom-graphic-1:before {
+	content: "\f103"
+}
+
+.flaticon-custom-handshake:before {
+	content: "\f104"
+}
+
+.flaticon-custom-headphones:before {
+	content: "\f105"
+}
+
+.flaticon-custom-interface:before {
+	content: "\f106"
+}
+
+.flaticon-custom-layers:before {
+	content: "\f107"
+}
+
+.flaticon-custom-light-bulb:before {
+	content: "\f108"
+}
+
+.flaticon-custom-mail:before {
+	content: "\f109"
+}
+
+.flaticon-custom-share:before {
+	content: "\f10a"
+}
+
+.flaticon-custom-target:before {
+	content: "\f10b"
+}
+
+.flaticon-custom-text-on-paper-sheet-sketch:before {
+	content: "\f10c";
+}
+
+@font-face {
+	font-family: Flaticon-finance;
+	src: url("../fonts/flaticon/Flaticon-finance.eot");
+	src: url("../fonts/flaticon/Flaticon-finance.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/Flaticon-finance.woff") format("woff"),
+		url("../fonts/flaticon/Flaticon-finance.ttf") format("truetype"),
+		url("../fonts/flaticon/Flaticon-finance.svg#Flaticon") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Flaticon-finance;
+		src: url("../fonts/flaticon/Flaticon-finance.svg#Flaticon") format("svg");
+	}
+}
+
+[class*=" flaticon-finance-"]:after,
 [class*=" flaticon-finance-"]:before,
 [class^=flaticon-finance-]:after,
-[class^=flaticon-finance-]:before{
-	font-family:Flaticon-finance;
-	font-style:normal;}
-.flaticon-finance-money-1:before{content:"\f100"}.flaticon-finance-avatar:before{content:"\f101"}
-.flaticon-finance-open-book:before{content:"\f102"}
-.flaticon-finance-chart:before{content:"\f103"}
-.flaticon-finance-atomic:before{content:"\f104"}
-.flaticon-finance-time:before{content:"\f105"}
-.flaticon-finance-money:before{content:"\f106"}
-.flaticon-finance-support:before{content:"\f107"}
-.flaticon-finance-get-money:before{content:"\f108"}
-.flaticon-finance-piggy-bank:before{content:"\f109"}
-.flaticon-finance-rich:before{content:"\f10a"}
-.flaticon-finance-notes:before{content:"\f10b"}
-.flaticon-finance-graph:before{content:"\f10c"}
-
-@font-face{font-family:Flaticon-sam;
-	src:url("../fonts/flaticon/Flaticon-sam.eot");
-	src:url("../fonts/flaticon/Flaticon-sam.eot?#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/Flaticon-sam.woff") format("woff"),
-	url("../fonts/flaticon/Flaticon-sam.ttf") format("truetype"),
-	url("../fonts/flaticon/Flaticon-sam.svg#Flaticon") format("svg");
-	font-weight:400;
-	font-style:normal;
+[class^=flaticon-finance-]:before {
+	font-family: Flaticon-finance;
+	font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0){
-	@font-face{font-family:Flaticon-sam;
-		src:url("../fonts/flaticon/Flaticon-sam.svg#Flaticon") format("svg")
+
+.flaticon-finance-money-1:before {
+	content: "\f100"
+}
+
+.flaticon-finance-avatar:before {
+	content: "\f101"
+}
+
+.flaticon-finance-open-book:before {
+	content: "\f102"
+}
+
+.flaticon-finance-chart:before {
+	content: "\f103"
+}
+
+.flaticon-finance-atomic:before {
+	content: "\f104"
+}
+
+.flaticon-finance-time:before {
+	content: "\f105"
+}
+
+.flaticon-finance-money:before {
+	content: "\f106"
+}
+
+.flaticon-finance-support:before {
+	content: "\f107"
+}
+
+.flaticon-finance-get-money:before {
+	content: "\f108"
+}
+
+.flaticon-finance-piggy-bank:before {
+	content: "\f109"
+}
+
+.flaticon-finance-rich:before {
+	content: "\f10a"
+}
+
+.flaticon-finance-notes:before {
+	content: "\f10b"
+}
+
+.flaticon-finance-graph:before {
+	content: "\f10c"
+}
+
+@font-face {
+	font-family: Flaticon-sam;
+	src: url("../fonts/flaticon/Flaticon-sam.eot");
+	src: url("../fonts/flaticon/Flaticon-sam.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/Flaticon-sam.woff") format("woff"),
+		url("../fonts/flaticon/Flaticon-sam.ttf") format("truetype"),
+		url("../fonts/flaticon/Flaticon-sam.svg#Flaticon") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Flaticon-sam;
+		src: url("../fonts/flaticon/Flaticon-sam.svg#Flaticon") format("svg")
 	}
 }
+
 [class*=" flaticon-sam-"]:after,
 [class*=" flaticon-sam-"]:before,
 [class^=flaticon-sam-]:after,
-[class^=flaticon-sam-]:before{
-	font-family:Flaticon-sam;
-	font-style:normal}
-	.flaticon-sam-alarm-clock:before{content:"\f100"}
-	.flaticon-sam-archives:before{content:"\f101"}
-	.flaticon-sam-badge:before{content:"\f102"}
-	.flaticon-sam-basket:before{content:"\f103"}
-	.flaticon-sam-battery:before{content:"\f104"}
-	.flaticon-sam-briefcase:before{content:"\f105"}
-	.flaticon-sam-briefcase-1:before{content:"\f106"}
-	.flaticon-sam-browser:before{content:"\f107"}
-	.flaticon-sam-browser-1:before{content:"\f108"}
-	.flaticon-sam-browser-2:before{content:"\f109"}
-	.flaticon-sam-browser-3:before{content:"\f10a"}
-	.flaticon-sam-browser-4:before{content:"\f10b"}
-	.flaticon-sam-browser-5:before{content:"\f10c"}
-	.flaticon-sam-calculator:before{content:"\f10d"}
-	.flaticon-sam-calendar:before{content:"\f10e"}
-	.flaticon-sam-chair:before{content:"\f10f"}
-	.flaticon-sam-clock:before{content:"\f110"}
-	.flaticon-sam-cloud:before{content:"\f111"}
-	.flaticon-sam-cloud-computing:before{content:"\f112"}
-	.flaticon-sam-cloud-computing-1:before{content:"\f113"}
-	.flaticon-sam-coffee-cup:before{content:"\f114"}
-	.flaticon-sam-computer:before{content:"\f115"}
-	.flaticon-sam-earth-globe:before{content:"\f116"}
-	.flaticon-sam-earth-globe-1:before{content:"\f117"}
-	.flaticon-sam-earth-globe-2:before{content:"\f118"}
-	.flaticon-sam-eye:before{content:"\f119"}
-	.flaticon-sam-file:before{content:"\f11a"}
-	.flaticon-sam-file-1:before{content:"\f11b"}
-	.flaticon-sam-finances:before{content:"\f11c"}
-	.flaticon-sam-flag:before{content:"\f11d"}
-	.flaticon-sam-flask:before{content:"\f11e"}
-	.flaticon-sam-folder:before{content:"\f11f"}
-	.flaticon-sam-garbage:before{content:"\f120"}
-	.flaticon-sam-garbage-1:before{content:"\f121"}
-	.flaticon-sam-id-card:before{content:"\f122"}
-	.flaticon-sam-keyboard:before{content:"\f123"}
-	.flaticon-sam-laptop:before{content:"\f124"}
-	.flaticon-sam-laptop-1:before{content:"\f125"}
-	.flaticon-sam-laptop-2:before{content:"\f126"}
-	.flaticon-sam-levels:before{content:"\f127"}
-	.flaticon-sam-light-bulb:before{content:"\f128"}
-	.flaticon-sam-light-bulb-1:before{content:"\f129"}
-	.flaticon-sam-light-bulb-2:before{content:"\f12a"}
-	.flaticon-sam-line-chart:before{content:"\f12b"}
-	.flaticon-sam-list:before{content:"\f12c"}
-	.flaticon-sam-magnet:before{content:"\f12d"}
-	.flaticon-sam-magnifying-glass:before{content:"\f12e"}
-	.flaticon-sam-magnifying-glass-1:before{content:"\f12f"}
-	.flaticon-sam-magnifying-glass-2:before{content:"\f130"}
-	.flaticon-sam-mail:before{content:"\f131"}
-	.flaticon-sam-medal:before{content:"\f132"}
-	.flaticon-sam-medal-1:before{content:"\f133"}
-	.flaticon-sam-megaphone:before{content:"\f134"}
-	.flaticon-sam-mobile-phone:before{content:"\f135"}
-	.flaticon-sam-mouse:before{content:"\f136"}
-	.flaticon-sam-photo-camera:before{content:"\f137"}
-	.flaticon-sam-photo-camera-1:before{content:"\f138"}
-	.flaticon-sam-pie-chart:before{content:"\f139"}
-	.flaticon-sam-placeholder:before{content:"\f13a"}
-	.flaticon-sam-placeholder-1:before{content:"\f13b"}
-	.flaticon-sam-placeholder-2:before{content:"\f13c"}
-	.flaticon-sam-placeholder-3:before{content:"\f13d"}
-	.flaticon-sam-play-button:before{content:"\f13e"}
-	.flaticon-sam-play-video:before{content:"\f13f"}
-	.flaticon-sam-plug:before{content:"\f140"}
-	.flaticon-sam-printer:before{content:"\f141"}
-	.flaticon-sam-puzzle:before{content:"\f142"}
-	.flaticon-sam-rocket-launch:before{content:"\f143"}
-	.flaticon-sam-rocket-launch-1:before{content:"\f144"}
-	.flaticon-sam-router:before{content:"\f145"}
-	.flaticon-sam-safe-box:before{content:"\f146"}
-	.flaticon-sam-screen:before{content:"\f147"}
-	.flaticon-sam-seo-label:before{content:"\f148"}
-	.flaticon-sam-share:before{content:"\f149"}
-	.flaticon-sam-shopping-cart:before{content:"\f14a"}
-	.flaticon-sam-shopping-cart-1:before{content:"\f14b"}
-	.flaticon-sam-speech-bubble:before{content:"\f14c"}
-	.flaticon-sam-stats:before{content:"\f14d"}
-	.flaticon-sam-stats-1:before{content:"\f14e"}
-	.flaticon-sam-stick-man:before{content:"\f14f"}
-	.flaticon-sam-tag:before{content:"\f150"}
-	.flaticon-sam-target:before{content:"\f151"}
-	.flaticon-sam-trophy:before{content:"\f152"}
-	.flaticon-sam-truck:before{content:"\f153"}
-	.flaticon-sam-upload:before{content:"\f154"}
-	.flaticon-sam-webcam:before{content:"\f155"}
+[class^=flaticon-sam-]:before {
+	font-family: Flaticon-sam;
+	font-style: normal
+}
 
-@font-face{font-family:Flaticon-xzopro;
-	src:url("../fonts/flaticon/Flaticon-xzopro.eot");
-	src:url("../fonts/flaticon/Flaticon-xzopro.eot?#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/Flaticon-xzopro.woff") format("woff"),
-	url("../fonts/flaticon/Flaticon-xzopro.ttf") format("truetype"),
-	url("../fonts/flaticon/Flaticon-xzopro.svg#Flaticon") format("svg");
-	font-weight:400;
-	font-style:normal;
+.flaticon-sam-alarm-clock:before {
+	content: "\f100"
 }
-@media screen and (-webkit-min-device-pixel-ratio:0){
-	@font-face{font-family:Flaticon-xzopro;
-		src:url("../fonts/flaticon/Flaticon-xzopro.svg#Flaticon") format("svg")}
-	}
-	[class*=" flaticon-xzopro-"]:after,
-	[class*=" flaticon-xzopro-"]:before,
-	[class^=flaticon-xzopro-]:after,
-	[class^=flaticon-xzopro-]:before{
-		font-family:Flaticon-xzopro;
-		font-style:normal
-	}
-	.flaticon-xzopro-settings:before{content:"\f100"}
-	.flaticon-xzopro-puzzle:before{content:"\f101"}
-	.flaticon-xzopro-graph:before{content:"\f102"}
-	.flaticon-xzopro-target:before{content:"\f103"}
-	.flaticon-xzopro-email:before{content:"\f104"}
-	.flaticon-xzopro-clock-2:before{content:"\f105"}
-	.flaticon-xzopro-phone-call:before{content:"\f106"}
-	.flaticon-xzopro-placeholder:before{content:"\f107"}
-	.flaticon-xzopro-stats:before{content:"\f108"}
-	.flaticon-xzopro-business:before{content:"\f109"}
-	.flaticon-xzopro-line-chart:before{content:"\f10a"}
-	.flaticon-xzopro-profits:before{content:"\f10b"}
-	.flaticon-xzopro-arrows:before{content:"\f10c"}
-	.flaticon-xzopro-file:before{content:"\f10d"}
-	.flaticon-xzopro-tool:before{content:"\f10e"}
-	.flaticon-xzopro-folder:before{content:"\f10f"}
-	.flaticon-xzopro-interface-1:before{content:"\f110"}
-	.flaticon-xzopro-process:before{content:"\f111"}
-	.flaticon-xzopro-analytics:before{content:"\f112"}
-	.flaticon-xzopro-transport:before{content:"\f113"}
-	.flaticon-xzopro-quality:before{content:"\f114"}
-	.flaticon-xzopro-interface:before{content:"\f115"}
-	.flaticon-xzopro-web-design:before{content:"\f116"}
-	.flaticon-xzopro-computer:before{content:"\f117"}
-	.flaticon-xzopro-creative-process:before{content:"\f118"}
-	.flaticon-xzopro-science:before{content:"\f119"}
-	.flaticon-xzopro-language:before{content:"\f11a"}
-	.flaticon-xzopro-arrow-point-to-right:before{content:"\f11b"}
-	.flaticon-xzopro-cogwheel:before{content:"\f11c"}
-	.flaticon-xzopro-help:before{content:"\f11d"}
-	.flaticon-xzopro-thinking:before{content:"\f11e"}
-	.flaticon-xzopro-account:before{content:"\f11f"}
-	.flaticon-xzopro-loupe:before{content:"\f120"}
-	.flaticon-xzopro-clock-1:before{content:"\f121"}
-	.flaticon-xzopro-clock:before{content:"\f122"}
-	.flaticon-xzopro-technology:before{content:"\f123"}
 
-@font-face{font-family:Flaticon-new;
-	src:url("../fonts/flaticon/Flaticon-new.eot");
-	src:url("../fonts/flaticon/Flaticon-new.eot?#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon/Flaticon-new.woff") format("woff"),
-	url("../fonts/flaticon/Flaticon-new.ttf") format("truetype"),
-	url("../fonts/flaticon/Flaticon-new.svg#Flaticon") format("svg");
-	font-weight:400;
-	font-style:normal;
+.flaticon-sam-archives:before {
+	content: "\f101"
 }
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{
-	@font-face{font-family:Flaticon-new;
-		src:url("../fonts/flaticon/Flaticon-new.svg#Flaticon") format("svg")
+
+.flaticon-sam-badge:before {
+	content: "\f102"
+}
+
+.flaticon-sam-basket:before {
+	content: "\f103"
+}
+
+.flaticon-sam-battery:before {
+	content: "\f104"
+}
+
+.flaticon-sam-briefcase:before {
+	content: "\f105"
+}
+
+.flaticon-sam-briefcase-1:before {
+	content: "\f106"
+}
+
+.flaticon-sam-browser:before {
+	content: "\f107"
+}
+
+.flaticon-sam-browser-1:before {
+	content: "\f108"
+}
+
+.flaticon-sam-browser-2:before {
+	content: "\f109"
+}
+
+.flaticon-sam-browser-3:before {
+	content: "\f10a"
+}
+
+.flaticon-sam-browser-4:before {
+	content: "\f10b"
+}
+
+.flaticon-sam-browser-5:before {
+	content: "\f10c"
+}
+
+.flaticon-sam-calculator:before {
+	content: "\f10d"
+}
+
+.flaticon-sam-calendar:before {
+	content: "\f10e"
+}
+
+.flaticon-sam-chair:before {
+	content: "\f10f"
+}
+
+.flaticon-sam-clock:before {
+	content: "\f110"
+}
+
+.flaticon-sam-cloud:before {
+	content: "\f111"
+}
+
+.flaticon-sam-cloud-computing:before {
+	content: "\f112"
+}
+
+.flaticon-sam-cloud-computing-1:before {
+	content: "\f113"
+}
+
+.flaticon-sam-coffee-cup:before {
+	content: "\f114"
+}
+
+.flaticon-sam-computer:before {
+	content: "\f115"
+}
+
+.flaticon-sam-earth-globe:before {
+	content: "\f116"
+}
+
+.flaticon-sam-earth-globe-1:before {
+	content: "\f117"
+}
+
+.flaticon-sam-earth-globe-2:before {
+	content: "\f118"
+}
+
+.flaticon-sam-eye:before {
+	content: "\f119"
+}
+
+.flaticon-sam-file:before {
+	content: "\f11a"
+}
+
+.flaticon-sam-file-1:before {
+	content: "\f11b"
+}
+
+.flaticon-sam-finances:before {
+	content: "\f11c"
+}
+
+.flaticon-sam-flag:before {
+	content: "\f11d"
+}
+
+.flaticon-sam-flask:before {
+	content: "\f11e"
+}
+
+.flaticon-sam-folder:before {
+	content: "\f11f"
+}
+
+.flaticon-sam-garbage:before {
+	content: "\f120"
+}
+
+.flaticon-sam-garbage-1:before {
+	content: "\f121"
+}
+
+.flaticon-sam-id-card:before {
+	content: "\f122"
+}
+
+.flaticon-sam-keyboard:before {
+	content: "\f123"
+}
+
+.flaticon-sam-laptop:before {
+	content: "\f124"
+}
+
+.flaticon-sam-laptop-1:before {
+	content: "\f125"
+}
+
+.flaticon-sam-laptop-2:before {
+	content: "\f126"
+}
+
+.flaticon-sam-levels:before {
+	content: "\f127"
+}
+
+.flaticon-sam-light-bulb:before {
+	content: "\f128"
+}
+
+.flaticon-sam-light-bulb-1:before {
+	content: "\f129"
+}
+
+.flaticon-sam-light-bulb-2:before {
+	content: "\f12a"
+}
+
+.flaticon-sam-line-chart:before {
+	content: "\f12b"
+}
+
+.flaticon-sam-list:before {
+	content: "\f12c"
+}
+
+.flaticon-sam-magnet:before {
+	content: "\f12d"
+}
+
+.flaticon-sam-magnifying-glass:before {
+	content: "\f12e"
+}
+
+.flaticon-sam-magnifying-glass-1:before {
+	content: "\f12f"
+}
+
+.flaticon-sam-magnifying-glass-2:before {
+	content: "\f130"
+}
+
+.flaticon-sam-mail:before {
+	content: "\f131"
+}
+
+.flaticon-sam-medal:before {
+	content: "\f132"
+}
+
+.flaticon-sam-medal-1:before {
+	content: "\f133"
+}
+
+.flaticon-sam-megaphone:before {
+	content: "\f134"
+}
+
+.flaticon-sam-mobile-phone:before {
+	content: "\f135"
+}
+
+.flaticon-sam-mouse:before {
+	content: "\f136"
+}
+
+.flaticon-sam-photo-camera:before {
+	content: "\f137"
+}
+
+.flaticon-sam-photo-camera-1:before {
+	content: "\f138"
+}
+
+.flaticon-sam-pie-chart:before {
+	content: "\f139"
+}
+
+.flaticon-sam-placeholder:before {
+	content: "\f13a"
+}
+
+.flaticon-sam-placeholder-1:before {
+	content: "\f13b"
+}
+
+.flaticon-sam-placeholder-2:before {
+	content: "\f13c"
+}
+
+.flaticon-sam-placeholder-3:before {
+	content: "\f13d"
+}
+
+.flaticon-sam-play-button:before {
+	content: "\f13e"
+}
+
+.flaticon-sam-play-video:before {
+	content: "\f13f"
+}
+
+.flaticon-sam-plug:before {
+	content: "\f140"
+}
+
+.flaticon-sam-printer:before {
+	content: "\f141"
+}
+
+.flaticon-sam-puzzle:before {
+	content: "\f142"
+}
+
+.flaticon-sam-rocket-launch:before {
+	content: "\f143"
+}
+
+.flaticon-sam-rocket-launch-1:before {
+	content: "\f144"
+}
+
+.flaticon-sam-router:before {
+	content: "\f145"
+}
+
+.flaticon-sam-safe-box:before {
+	content: "\f146"
+}
+
+.flaticon-sam-screen:before {
+	content: "\f147"
+}
+
+.flaticon-sam-seo-label:before {
+	content: "\f148"
+}
+
+.flaticon-sam-share:before {
+	content: "\f149"
+}
+
+.flaticon-sam-shopping-cart:before {
+	content: "\f14a"
+}
+
+.flaticon-sam-shopping-cart-1:before {
+	content: "\f14b"
+}
+
+.flaticon-sam-speech-bubble:before {
+	content: "\f14c"
+}
+
+.flaticon-sam-stats:before {
+	content: "\f14d"
+}
+
+.flaticon-sam-stats-1:before {
+	content: "\f14e"
+}
+
+.flaticon-sam-stick-man:before {
+	content: "\f14f"
+}
+
+.flaticon-sam-tag:before {
+	content: "\f150"
+}
+
+.flaticon-sam-target:before {
+	content: "\f151"
+}
+
+.flaticon-sam-trophy:before {
+	content: "\f152"
+}
+
+.flaticon-sam-truck:before {
+	content: "\f153"
+}
+
+.flaticon-sam-upload:before {
+	content: "\f154"
+}
+
+.flaticon-sam-webcam:before {
+	content: "\f155"
+}
+
+@font-face {
+	font-family: Flaticon-xzopro;
+	src: url("../fonts/flaticon/Flaticon-xzopro.eot");
+	src: url("../fonts/flaticon/Flaticon-xzopro.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/Flaticon-xzopro.woff") format("woff"),
+		url("../fonts/flaticon/Flaticon-xzopro.ttf") format("truetype"),
+		url("../fonts/flaticon/Flaticon-xzopro.svg#Flaticon") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Flaticon-xzopro;
+		src: url("../fonts/flaticon/Flaticon-xzopro.svg#Flaticon") format("svg")
 	}
 }
+
+[class*=" flaticon-xzopro-"]:after,
+[class*=" flaticon-xzopro-"]:before,
+[class^=flaticon-xzopro-]:after,
+[class^=flaticon-xzopro-]:before {
+	font-family: Flaticon-xzopro;
+	font-style: normal
+}
+
+.flaticon-xzopro-settings:before {
+	content: "\f100"
+}
+
+.flaticon-xzopro-puzzle:before {
+	content: "\f101"
+}
+
+.flaticon-xzopro-graph:before {
+	content: "\f102"
+}
+
+.flaticon-xzopro-target:before {
+	content: "\f103"
+}
+
+.flaticon-xzopro-email:before {
+	content: "\f104"
+}
+
+.flaticon-xzopro-clock-2:before {
+	content: "\f105"
+}
+
+.flaticon-xzopro-phone-call:before {
+	content: "\f106"
+}
+
+.flaticon-xzopro-placeholder:before {
+	content: "\f107"
+}
+
+.flaticon-xzopro-stats:before {
+	content: "\f108"
+}
+
+.flaticon-xzopro-business:before {
+	content: "\f109"
+}
+
+.flaticon-xzopro-line-chart:before {
+	content: "\f10a"
+}
+
+.flaticon-xzopro-profits:before {
+	content: "\f10b"
+}
+
+.flaticon-xzopro-arrows:before {
+	content: "\f10c"
+}
+
+.flaticon-xzopro-file:before {
+	content: "\f10d"
+}
+
+.flaticon-xzopro-tool:before {
+	content: "\f10e"
+}
+
+.flaticon-xzopro-folder:before {
+	content: "\f10f"
+}
+
+.flaticon-xzopro-interface-1:before {
+	content: "\f110"
+}
+
+.flaticon-xzopro-process:before {
+	content: "\f111"
+}
+
+.flaticon-xzopro-analytics:before {
+	content: "\f112"
+}
+
+.flaticon-xzopro-transport:before {
+	content: "\f113"
+}
+
+.flaticon-xzopro-quality:before {
+	content: "\f114"
+}
+
+.flaticon-xzopro-interface:before {
+	content: "\f115"
+}
+
+.flaticon-xzopro-web-design:before {
+	content: "\f116"
+}
+
+.flaticon-xzopro-computer:before {
+	content: "\f117"
+}
+
+.flaticon-xzopro-creative-process:before {
+	content: "\f118"
+}
+
+.flaticon-xzopro-science:before {
+	content: "\f119"
+}
+
+.flaticon-xzopro-language:before {
+	content: "\f11a"
+}
+
+.flaticon-xzopro-arrow-point-to-right:before {
+	content: "\f11b"
+}
+
+.flaticon-xzopro-cogwheel:before {
+	content: "\f11c"
+}
+
+.flaticon-xzopro-help:before {
+	content: "\f11d"
+}
+
+.flaticon-xzopro-thinking:before {
+	content: "\f11e"
+}
+
+.flaticon-xzopro-account:before {
+	content: "\f11f"
+}
+
+.flaticon-xzopro-loupe:before {
+	content: "\f120"
+}
+
+.flaticon-xzopro-clock-1:before {
+	content: "\f121"
+}
+
+.flaticon-xzopro-clock:before {
+	content: "\f122"
+}
+
+.flaticon-xzopro-technology:before {
+	content: "\f123"
+}
+
+@font-face {
+	font-family: Flaticon-new;
+	src: url("../fonts/flaticon/Flaticon-new.eot");
+	src: url("../fonts/flaticon/Flaticon-new.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/Flaticon-new.woff") format("woff"),
+		url("../fonts/flaticon/Flaticon-new.ttf") format("truetype"),
+		url("../fonts/flaticon/Flaticon-new.svg#Flaticon") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Flaticon-new;
+		src: url("../fonts/flaticon/Flaticon-new.svg#Flaticon") format("svg")
+	}
+}
+
 [class*=" flaticon-new-"]:after,
 [class*=" flaticon-new-"]:before,
 [class^=flaticon-new-]:after,
-[class^=flaticon-new-]:before{
-	font-family:Flaticon-new;
-	font-style:normal
+[class^=flaticon-new-]:before {
+	font-family: Flaticon-new;
+	font-style: normal
 }
-.flaticon-new-share:before{content:"\f100"}
-.flaticon-new-next:before{content:"\f101"}
-.flaticon-new-layers:before{content:"\f102"}
-.flaticon-new-money:before{content:"\f103"}
-.flaticon-new-dollar-coins:before{content:"\f104"}
-.flaticon-new-dollar:before{content:"\f105"}
-.flaticon-new-piggy-bank:before{content:"\f106"}
-.flaticon-new-contract:before{content:"\f107"}
-.flaticon-new-boy-smiling:before{content:"\f108"}
-.flaticon-new-coffee-cup:before{content:"\f109"}
-.flaticon-new-team:before{content:"\f10b"}
+
+.flaticon-new-share:before {
+	content: "\f100"
+}
+
+.flaticon-new-next:before {
+	content: "\f101"
+}
+
+.flaticon-new-layers:before {
+	content: "\f102"
+}
+
+.flaticon-new-money:before {
+	content: "\f103"
+}
+
+.flaticon-new-dollar-coins:before {
+	content: "\f104"
+}
+
+.flaticon-new-dollar:before {
+	content: "\f105"
+}
+
+.flaticon-new-piggy-bank:before {
+	content: "\f106"
+}
+
+.flaticon-new-contract:before {
+	content: "\f107"
+}
+
+.flaticon-new-boy-smiling:before {
+	content: "\f108"
+}
+
+.flaticon-new-coffee-cup:before {
+	content: "\f109"
+}
+
+.flaticon-new-team:before {
+	content: "\f10b"
+}

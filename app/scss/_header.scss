@@ -167,33 +167,31 @@
 .slick-dots {
   bottom: 19px;
 }
+
 .our_services_fon h3 {
-display: none;
+  display: none;
 }
+
+#carousel_ourteam ul.slick-dots,
 .our_services_fon .slick-dots {
   bottom: -25px;
 }
+
+#carousel_trademark .slick-dots li button:before,
+#carousel_ourteam ul.slick-dots li button:before,
 #carousel_trademark .slick-dots li button:before,
 #carousel_adwice .slick-dots li button:before,
 .header_slider_wraper .slick-dots li button:before {
   color: #0a6db7;
   font-size: 12px;
+  @include trans;
 }
-#carousel_trademark .slick-dots li button:before,
-#carousel_adwice .slick-dots li button:before {
-  font-size: 9px;
-}
+
 .slick-prev:before,
 .slick-next:before {
   color: #0a6db7;
-  ;
-
+  // @include trans;
 }
-
-
-
-
-
 
 .slick-dots li.slick-active button:before {
   color: #0a6db7;
@@ -322,6 +320,7 @@ display: none;
   font-size: .95rem;
   text-transform: uppercase;
   position: relative;
+  @include trans;
 }
 
 #mainmenu ul li ul li a:hover:before {
@@ -363,24 +362,27 @@ display: none;
   background-color: #253cac;
 }
 
+.header_page_bunner,
 .header_slider {
-  background-image: url('../img/sliderheader/slide-bg-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  min-height: 754px;
   position: relative;
+
+}
+
+.header_slider {
+  background-image: url('../img/sliderheader/slide-bg-2.jpg');
+  min-height: 754px;
 }
 
 .header_page_bunner {
   background-image: url('../img/sliderheader/slide-bg-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   padding: 110px 0;
-  position: relative;
+  background-attachment: fixed;
 }
 
+.header_slider:before,
 .header_page_bunner:before {
   top: 0;
   left: 0;
@@ -388,8 +390,8 @@ display: none;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(#000, 0.65);
-  /*             filter: blur(10px); */
+  background: #000;
+  opacity: 0.65;
 }
 
 .main_page_title {
@@ -437,8 +439,9 @@ display: none;
   display: none;
 }
 
+.breadcrumbs span,
 .breadcrumbs a {
-  float: left;
+  @include trans;
   font-size: 1.125rem;
   line-height: 1.77778;
   text-decoration: none;
@@ -446,16 +449,11 @@ display: none;
   position: relative;
 }
 
-.header_slider:before {
-  top: 0;
-  left: 0;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(#302E4E, 0.65);
-  /*             filter: blur(10px); */
+.breadcrumbs a:hover {
+  color: #fff;
 }
+
+
 
 .header_content {
   min-height: 754px;
