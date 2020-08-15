@@ -69,6 +69,7 @@
 
 .top_line_logo {
   color: #fff;
+  margin-right: auto;
 }
 
 .top_line_menu {
@@ -80,21 +81,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.top_call_box {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .top_call_box_item {
-  /*  width: 33.33333%; */
+  width: 25%;
   min-height: 42px;
   padding-left: 3px;
   padding-right: 3px;
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .top_call_box_item:last-child {
@@ -237,8 +232,9 @@
   position: relative;
 }
 
+
 #mainmenu ul li a:hover {
-  padding: 30px 20px;
+  color: darken(#fff, 10%);
 }
 
 #mainmenu>ul>li.parent>a {

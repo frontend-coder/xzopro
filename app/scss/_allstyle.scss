@@ -393,6 +393,9 @@ h3.order-name {
   text-align: center;
   position: relative;
   transition: all 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .price_box_items:hover {
@@ -429,6 +432,7 @@ h3.order-name {
   @include font-size(55px);
   color: $color_blues;
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .pbi_title {
@@ -764,7 +768,9 @@ h3.order-name {
 .portfolio_grid {
   display: grid;
   grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr);
-  grid-template-rows: minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr);
+  // grid-template-rows: minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr) minmax(320px, 1fr);
+
+  grid-auto-rows: minmax(320px, 1fr);
   grid-gap: 10px;
 
 }
@@ -1666,6 +1672,20 @@ footer {
   line-height: 1.25;
   background-repeat: no-repeat;
 }
+
+.checkbox input[type="checkbox"].css-checkbox+label.css-label:hover {
+  opacity: 1.0;
+}
+
+.checkbox input[type="checkbox"]:checked+label.css-label {
+  background-image: url("../img/checkbox_no.png");
+}
+
+
+
+
+
+
 
 .css-label a {
   color: rgb(222, 222, 222);
