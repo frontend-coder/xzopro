@@ -73,6 +73,10 @@ body {
 	}
 }
 
+html.stopped,
+body.stopped {
+	overflow: hidden;
+}
 
 @import "header"; // стили шапки сайта
 @import "allstyle"; // стили шапки сайта

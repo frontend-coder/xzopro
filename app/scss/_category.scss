@@ -1,188 +1,205 @@
 @import '_var.scss';
+
 .main_block {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
   padding-top: 100px;
 }
 
 .main_content_block {
-	width: 66%;
-	float: left;
-	padding: 0 15px 50px 15px;
+  width: 66%;
+  float: left;
+  padding: 0 15px 50px 15px;
 }
 
 .category_box {
-	margin-bottom: 66px;
+  margin-bottom: 66px;
 }
 
 .main_sidebar_block {
   position: sticky;
-  top:0;
+  top: 0;
   width: 34%;
   float: right;
   padding: 0 15px 50px 15px;
 }
+
 .thamb_images {
-	padding: 0;
-	margin: 0 auto 35px auto;
-	border-radius: 5px;
+  padding: 0;
+  margin: 0 auto 35px auto;
+  border-radius: 5px;
 }
+
 .thamb_images img {
-	display: inline-block;
-	width: 100%;
-	height: auto;
-	border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
+
 .main_content_title {
-	@include font-size(28px);
-	line-height: (33px / 28px);
-	font-family: "PoppinsBold", sans-serif;
-	margin-bottom: 20px;
+  @include font-size(28px);
+  line-height: (33px / 28px);
+  font-family: "PoppinsBold", sans-serif;
+  margin-bottom: 20px;
 }
 
 .main_content_list {
-	margin: 0 0 35px 0;
+  margin: 0 0 35px 0;
 }
 
 .main_content_list li {
-	display: inline-block;
-	margin-right: 10px;
-	margin-left:20px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .main_content_list li:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
-.mcl_autor, .mcl_date, .mcl_comment, .mcl_tags {
-	position: relative;
+.mcl_autor,
+.mcl_date,
+.mcl_comment,
+.mcl_tags {
+  position: relative;
 }
 
 .main_content_list a {
-	@include font-size(15px);
-	line-height: (27px / 15px);
-	color:#242424;
-	@include trans;
+  @include font-size(15px);
+  line-height: (27px / 15px);
+  color: #242424;
+  @include trans;
 }
 
 .main_content_list a:hover {
-	color: $color_blues;
+  color: $color_blues;
 }
 
 .mcl_autor:before,
 .mcl_date:before,
 .mcl_comment:before,
 .mcl_tags:before {
-	top: -7px;
-	left: -17px;
-	content: "\f007";
-	position: absolute;
-	font-family: "FontAwesome";
-	color:$color_blues;
+  top: -7px;
+  left: -17px;
+  content: "\f007";
+  position: absolute;
+  font-family: "FontAwesome";
+  color: $color_blues;
 }
 
 .mcl_date:before {
-	content: "\f073";
+  content: "\f073";
 }
 
 .mcl_comment:before {
-	content: "\f0e6";
+  content: "\f0e6";
 }
 
 .mcl_tags:before {
-	top: -5px;
-	left: -18px;
-	content: "\f02c";
+  top: -5px;
+  left: -18px;
+  content: "\f02c";
 }
 
 .entry-content p {
-	@include font-size(15px);
-	line-height: (27px / 15px);
-	color:#505050;
-	margin-bottom: 5px;
+  @include font-size(15px);
+  line-height: (27px / 15px);
+  color: #505050;
+  margin-bottom: 5px;
 }
 
 .entry-content p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .entry-content .mainbuttons {
-  color:#fff;
+  color: #fff;
   margin-top: 36px;
 }
 
 /* стилизация постраничной навигации */
 .pagination {
-	margin: 0 auto 42px auto;
-	text-align: center; }
+  margin: 0 auto 42px auto;
+  text-align: center;
+}
 
-	.pagination ul {
-   list-style: none outside; }
-   .pagination ul li {
-     display: inline-block;
-     margin: 0;
-     padding: 0; }
+.pagination ul {
+  list-style: none outside;
+}
 
-     .pagination .page-numbers {
-      @include font-size(18px);
-      font-size: 15px;
-      line-height: 42px;
-      width: 42px;
-      height: 42px;
-      text-align: center;
-      display: inline-block;
-      margin-right: 3px;
-      margin-bottom: 6px;
-      color: #ffffff;
-      background-color: #0a6db7;
-      border: 1px solid #f4f4f0;
-      transition: all 200ms ease-in-out;
-      border-radius: 5px; }
-      .pagination .current,
-      .pagination .current:hover {
-       background-color: #253cac;
-       color: #fff; }
+.pagination ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 
-       .pagination .page-numbers:hover {
-         background-color: darken(#0a6db7, 10%);
-         color: #fff; }
+.pagination .page-numbers {
+  @include font-size(18px);
+  font-size: 15px;
+  line-height: 42px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  background-color: #0a6db7;
+  border: 1px solid #f4f4f0;
+  transition: all 200ms ease-in-out;
+  border-radius: 5px;
+}
 
-         .pagination .inactive,
-         .pagination .inactive:hover {
-           background-color: #253cac;
-           color: #ffffff;
-         }
+.pagination .current,
+.pagination .current:hover {
+  background-color: #253cac;
+  color: #fff;
+}
+
+.pagination .page-numbers:hover {
+  background-color: darken(#0a6db7, 10%);
+  color: #fff;
+}
+
+.pagination .inactive,
+.pagination .inactive:hover {
+  background-color: #253cac;
+  color: #ffffff;
+}
 
 /*  виджеты в сайдбар  */
-.widget  {
-	margin-bottom: 30px;
+.widget {
+  margin-bottom: 30px;
 }
+
 .widget_search,
 .widget_archive,
 .widget_resentpost,
 .widget_last_post {
-  border: 1px solid  $color_blues;
+  border: 1px solid $color_blues;
 }
+
 .widget-title {
   @include font-size(24px);
   line-height: (28px / 24px);
   font-family: "PoppinsBold", sans-serif;
   text-transform: capitalize;
   text-align: left;
-  padding:20px  0 20px 30px;
-  background-color:  $color_blues;
+  padding: 20px 0 20px 30px;
+  background-color: $color_blues;
   color: #fff;
 }
 
 .search-form {
-	width: 90%;
-	margin: 30px auto;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: flex-start;
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .search-field {
@@ -195,19 +212,19 @@
 }
 
 .search-submit {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
   height: 50px;
   width: 50px;
   line-height: 50px;
   border: none;
-  background-color:  $color_blues;
+  background-color: $color_blues;
   color: #fff;
 }
 
 .widget ul {
   list-style: none;
-  margin: 30px auto ;
+  margin: 30px auto;
   width: 90%;
 }
 
@@ -220,11 +237,11 @@
 }
 
 .widget ul li a {
- position: relative;
- padding-left: 15px;
- @include font-size(16px);
- line-height: (28px / 16px);
- color: #505050;
+  position: relative;
+  padding-left: 15px;
+  @include font-size(16px);
+  line-height: (28px / 16px);
+  color: #505050;
 }
 
 .widget ul li a:before {
@@ -236,7 +253,7 @@
   @include font-size(18px);
 }
 
-.widget_resentpost .rpt_title:before  {
+.widget_resentpost .rpt_title:before {
   display: none;
 }
 
@@ -246,8 +263,8 @@
 }
 
 .widget_last_post ul li {
-	position: relative;
- padding-left: 15px;
+  position: relative;
+  padding-left: 15px;
 }
 
 .widget_last_post ul li:before {
@@ -265,15 +282,15 @@
 }
 
 blockquote {
-	border-left: 5px solid $color_blues;
- font-size: 0.9375rem;
- line-height: 1.8;
- padding-left: 20px;
- position: relative;
- font-style: italic;
- font-size: 16px;
- color:#505050;
- margin-bottom: 5px;
+  border-left: 5px solid $color_blues;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
+  font-style: italic;
+  font-size: 16px;
+  color: #505050;
+  margin-bottom: 5px;
 }
 
 .pagesearch_title {
@@ -289,18 +306,19 @@ blockquote {
 }
 
 .entry_single {
- padding-bottom: 40px;
- border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
 }
 
 .entry_footer {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #ddd;
 }
+
 .entry_footer .mainbuttons {
   line-height: 1.5;
   text-align: center;
@@ -312,40 +330,43 @@ blockquote {
 ---------------------------------------*/
 
 .nocomments {
-  display: none; }
-  .comment-number {
-   margin: 30px 0 20px 10px; }
+  display: none;
+}
 
-   .comment-number h4 {
-    display: inline;
-    font-size: 2.2rem;
-    font-weight: normal;
-    opacity: .7;
-  }
+.comment-number {
+  margin: 30px 0 20px 10px;
+}
 
-  .comment-number span a,
-  .comment-number span a:visited {
-    margin: 0 10px 0 20px;
-    padding: 8px 16px;
-    font-size: 1.2rem;
-    color: #777;
-    font-weight: bold;
-    border-radius: 16px;
-    background: rgb(230, 230, 230);
-    background: rgba(154, 154, 154, 0.10);
-    @include trans;
-  }
+.comment-number h4 {
+  display: inline;
+  font-size: 2.2rem;
+  font-weight: normal;
+  opacity: .7;
+}
 
-  .comment-number span a:hover {
-    background: rgba(154, 154, 154, 0.20);
-  }
+.comment-number span a,
+.comment-number span a:visited {
+  margin: 0 10px 0 20px;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  color: #777;
+  font-weight: bold;
+  border-radius: 16px;
+  background: rgb(230, 230, 230);
+  background: rgba(154, 154, 154, 0.10);
+  @include trans;
+}
 
-  .c-head  {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #555;
-    padding: 10px 20px;
-    margin-bottom: 15px;
+.comment-number span a:hover {
+  background: rgba(154, 154, 154, 0.20);
+}
+
+.c-head {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin-bottom: 15px;
   // margin: 0 10px 10px 10px;
   background: #efefef;
   text-align: right;
@@ -380,12 +401,14 @@ blockquote {
   border: 1px solid #dedede;
 }
 
-.commentlist {list-style: none;
-	text-align: right;
+.commentlist {
+  list-style: none;
+  text-align: right;
 }
 
-#comments ul.children {list-style: none;
-	width: 90%;
+#comments ul.children {
+  list-style: none;
+  width: 90%;
   display: inline-block;
 }
 
@@ -404,19 +427,21 @@ blockquote {
   border: 4px solid #e3e3e3;
   border-radius: 4px;
 }
+
 .c-body {
   padding-bottom: 10px;
   text-align: right;
 }
+
 .c-body p {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 1.3rem;
   text-align: left;
 }
 
 .reply {
- padding: 10px 0;
- display: inline-block;
+  padding: 10px 0;
+  display: inline-block;
 }
 
 .reply a,
@@ -435,36 +460,44 @@ blockquote {
 }
 
 .navigation {
-	display: block;
-	margin-bottom: 10px;
-	display: flex;
- justify-content: space-between;
+  display: block;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.alignleft { display: inline-block;  }
-.alignright {  display: inline-block;}
+.alignleft {
+  display: inline-block;
+}
+
+.alignright {
+  display: inline-block;
+}
 
 #respond {
- background: #fff;
- margin: 5px 0;
- border: 1px solid #dedede;
-}
-#postcomment {
- margin: 10px;
- padding: 10px 20px 10px 0;
- font-size: 1.3rem;
- color: #555;
- background: #efefef;
- text-align: right;
+  background: #fff;
+  margin: 5px 0;
+  border: 1px solid #dedede;
 }
 
-form#commentform, p.logged-in {
+#postcomment {
+  margin: 10px;
+  padding: 10px 20px 10px 0;
+  font-size: 1.3rem;
+  color: #555;
+  background: #efefef;
+  text-align: right;
+}
+
+form#commentform,
+p.logged-in {
   margin: 30px;
   font-size: 1.20rem;
 }
 
 .bloged-in a,
-form#commentform, p.logged-in a {
+form#commentform,
+p.logged-in a {
   color: #000;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -472,16 +505,17 @@ form#commentform, p.logged-in a {
 }
 
 .bloged-in a:hover,
-form#commentform, p.logged-in a:hover {
+form#commentform,
+p.logged-in a:hover {
   color: #555;
 }
 
 .entry-content a {
- color: #000;
- text-decoration: underline;
- -webkit-transition: all 0.2s ease;
- -o-transition: all 0.2s ease;
- transition: all 0.2s ease;
+  color: #000;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .entry-content a:hover {
@@ -525,14 +559,18 @@ label.comment-field {
 }
 
 #commentform .mainbuttons {
-  border:none;
+  border: none;
 }
 
-#commentform .commenting_input:-webkit-autofill {    // важно
--webkit-box-shadow: inset 0 0 0 70px #ffffff !important; /* Цвет фона */
--webkit-text-fill-color: #aaaaaa !important; /* цвет текста */
- color: #505050 !important; /* цвет текста */
- background-color: #fff;
+#commentform .commenting_input:-webkit-autofill {
+  // важно
+  -webkit-box-shadow: inset 0 0 0 70px #ffffff !important;
+  /* Цвет фона */
+  -webkit-text-fill-color: #aaaaaa !important;
+  /* цвет текста */
+  color: #505050 !important;
+  /* цвет текста */
+  background-color: #fff;
 }
 
 #commentform .commenting_input:focus-within {
@@ -561,17 +599,17 @@ label.comment-field {
 }
 
 .form_comment_box {
-	width: 100%;
-	margin: 0;
-	padding: 40px 0 0 0;
+  width: 100%;
+  margin: 0;
+  padding: 40px 0 0 0;
 }
 
 .form_comment_title {
- @include font-size(24px);
- line-height: (28px / 24px);
- font-family: "PoppinsBold", sans-serif;
- margin-bottom: 14px;
- color: #242424;
+  @include font-size(24px);
+  line-height: (28px / 24px);
+  font-family: "PoppinsBold", sans-serif;
+  margin-bottom: 14px;
+  color: #242424;
 }
 
 .form_comment_descr {
