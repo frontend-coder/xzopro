@@ -6,10 +6,12 @@
   background-color: rgb(48, 48, 56);
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 
 .header_top {
   height: 50px;
+  background-color: #303038;
 }
 
 .header_top_social {
@@ -134,6 +136,11 @@
 
 .top_menu {
   height: 80px;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
   /*  position: fixed;
  width: 100%;
  z-index: 1;
@@ -144,6 +151,20 @@
   display: flex;
   justify-content: flex-start;
   align-content: center;
+}
+
+.menu-up-lip {
+  top: -281px;
+  min-width: 100%;
+  left: 0;
+  transition: 0.4s;
+
+}
+
+.menu-up-lip-down {
+  top: 0px;
+  margin-top: 0;
+  position: fixed;
 }
 
 .hamburger {
@@ -638,7 +659,7 @@
 
 .header_page_bunner {
   background-image: url('../img/sliderheader/slide-bg-2.jpg');
-  padding: 110px 0;
+  padding: 170px 0 100px;
   background-attachment: fixed;
 }
 

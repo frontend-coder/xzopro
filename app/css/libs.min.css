@@ -8927,10 +8927,12 @@ body.stopped {
   background-color: #303038;
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 
 .header_top {
   height: 50px;
+  background-color: #303038;
 }
 
 .header_top_social {
@@ -9080,6 +9082,11 @@ body.stopped {
 
 .top_menu {
   height: 80px;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
   /*  position: fixed;
  width: 100%;
  z-index: 1;
@@ -9098,6 +9105,21 @@ body.stopped {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
+}
+
+.menu-up-lip {
+  top: -281px;
+  min-width: 100%;
+  left: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.menu-up-lip-down {
+  top: 0px;
+  margin-top: 0;
+  position: fixed;
 }
 
 .hamburger {
@@ -9604,7 +9626,7 @@ body.stopped {
 
 .header_page_bunner {
   background-image: url("../img/sliderheader/slide-bg-2.jpg");
-  padding: 110px 0;
+  padding: 170px 0 100px;
   background-attachment: fixed;
 }
 
@@ -13093,6 +13115,9 @@ label.comment-field {
   }
   .header_top_social_right {
     display: none;
+  }
+  .header_page_bunner {
+    padding: 100px 0 100px;
   }
 }
 

@@ -5,10 +5,7 @@ $(document).ready(function () {
     $('.mobile_wrapper').toggleClass('active');
     $('html').toggleClass('stopped');
     $('body').toggleClass('stopped');
-  })
-
-
-    ; (function ($, window, document, undefined) {
+  }); (function ($, window, document, undefined) {
       var pluginName = "jqueryAccordionMenu";
       var defaults = {
         speed: 300,
@@ -101,29 +98,59 @@ $(document).ready(function () {
 
 
   //обработчик
-  jQuery(document).ready(function () {
+
     jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
 
-  });
   //активный класс
   $(function () {
     $("#demo-list li").click(function () {
-      $("#demo-list li.active").removeClass("active")
+      $("#demo-list li.active").removeClass("active");
       $(this).addClass("active");
     })
-  })	
-
-
-
-
-
-
-
-
-
-
-
+  });
   
+  
+
+
+
+var objToStick = $(".top_menu"); //Получаем нужный объект
+
+ $(window).scroll(function () {
+   var windowScroll = $(window).scrollTop();//Получаем величину, показывающую на сколько прокручено окно
+   if (windowScroll > 400) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+     $(objToStick).addClass("menu-up-lip");
+ } else {
+     $(objToStick).removeClass("menu-up-lip");
+   };
+ });
+
+  $(window).scroll(function () {
+    var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
+    if (windowScroll > window.innerHeight) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+      $(objToStick).addClass("menu-up-lip-down");
+    } else {
+      $(objToStick).removeClass("menu-up-lip-down");
+    };
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
